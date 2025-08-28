@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Aldea Mágica | Baños de Agua Santa, Ecuador</title>
+  <meta name="description" content="La Aldea Mágica (desde 2018) es un jardín-obra vivo de duendes, creado por Fito Girolami (Argentina) y Catalina Lucz-Ligeti (Chile) en Baños de Agua Santa, Ecuador. Experiencia artística íntima, no turística." />
+  <meta name="author" content="Fito Girolami, Catalina Lucz-Ligeti" />
+  <link rel="canonical" href="https://aldeamagica.art/" />
+  
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="La Aldea Mágica | Baños de Agua Santa, Ecuador" />
+  <meta property="og:site_name" content="aldeamagica.art" />
+  <meta property="og:description" content="Jardín-obra vivo de duendes. Experiencia íntima y simbólica en Baños de Agua Santa." />
+  <meta property="og:image" content="/assets/aldea-hero.jpg" />
+  <meta property="og:url" content="https://aldeamagica.art/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="La Aldea Mágica | Baños de Agua Santa, Ecuador" />
+  <meta name="twitter:description" content="Jardín-obra vivo de duendes. Experiencia íntima y simbólica en Baños de Agua Santa." />
+  <meta name="twitter:image" content="/assets/aldea-hero.jpg" />
+
+  <!-- Favicon (opcional) -->
+  <link rel="icon" href="/assets/favicon.png" />
+
+  <!-- Tipografía segura + variables -->
+  <style>
+    :root{
+      --bg:#fafafa; --text:#111; --muted:#666; --brand:#0f172a; --card:#fff; --line:#eaeaea;
+      --radius:20px; --shadow:0 6px 24px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;scroll-behavior:smooth;background:var(--bg);color:var(--text);font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.7);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .nav a.logo{font-weight:700}
+    .nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    .nav a{padding:6px 8px;border-radius:10px;text-decoration:none}
+    .nav a:hover{background:#f2f2f2}
+    .nav .cta{border:1px solid var(--line)}
+
+    /* Hero */
+    .hero{position:relative;min-height:82vh;display:grid;place-items:end;background:#000;color:#fff}
+    .hero::before{content:"";position:absolute;inset:0;background:url('/assets/aldea-hero.jpg') center/cover no-repeat;opacity:.9}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,.15), transparent)}
+    .hero .inner{position:relative;padding:56px 0}
+    .pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+    .pill{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.35);padding:6px 10px;border-radius:999px;font-size:13px;background:rgba(0,0,0,.25)}
+    .hero h1{font-size: clamp(32px, 6vw, 60px);margin:6px 0 6px}
+    .hero p{max-width:720px;color:#fff;opacity:.95}
+    .hero .buttons{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;gap:10px;align-items:center;padding:12px 16px;border-radius:14px;border:1px solid #ffffff33;background:#ffffff; color:#000; text-decoration:none; box-shadow:var(--shadow)}
+    .btn.alt{background:rgba(255,255,255,.12); color:#fff; border-color:#ffffff55}
+
+    /* Sections */
+    section{padding:72px 0}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+    .section-title h2{font-size: clamp(24px, 3.2vw, 40px);margin:0}
+    .subtitle{color:var(--muted);max-width:820px;margin:6px 0 24px}
+
+    .grid{display:grid;gap:24px}
+    @media (min-width:900px){
+      .grid-2{grid-template-columns:1.15fr .85fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+    }
+
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+    .tile{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+    .tile img{height:190px;width:100%;object-fit:cover}
+
+    /* Visit */
+    .list{list-style:none;padding:0;margin:0}
+    .list li{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--line)}
+    .list li:last-child{border-bottom:0}
+    .badge{display:inline-block;padding:2px 8px;border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--muted)}
+
+    /* FAQ */
+    details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px}
+    details+details{margin-top:12px}
+    summary{cursor:pointer;font-weight:600}
+
+    /* Footer */
+    footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted)}
+  </style>
+
+  <!-- JSON-LD: TouristAttraction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "La Aldea Mágica",
+    "url": "https://aldeamagica.art/",
+    "description": "Jardín-obra vivo de duendes, experiencia íntima y simbólica en Baños de Agua Santa, fundada en 2018 por Fito Girolami y Catalina Lucz-Ligeti.",
+    "founder": [
+      {"@type": "Person", "name": "Fito Girolami"},
+      {"@type": "Person", "name": "Catalina Lucz-Ligeti"}
+    ],
+    "address": {"@type":"PostalAddress","addressLocality":"Baños de Agua Santa","addressCountry":"EC"},
+    "image": ["/assets/aldea-hero.jpg", "/assets/galeria-1.jpg", "/assets/galeria-2.jpg"],
+    "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"10:00","closes":"18:00"}],
+    "sameAs": [
+      "https://maps.app.goo.gl/Exm64UHQDLVsebL7A",
+      "https://instagram.com/lacasadelduende_ec"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="#">La Aldea Mágica</a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#visitar" class="cta">Cómo llegar</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="wrap inner">
+        <div class="pills">
+          <span class="pill">Obra viva</span>
+          <span class="pill">Experiencia íntima</span>
+          <span class="pill">Desde 2018</span>
+        </div>
+        <h1>La Aldea Mágica</h1>
+        <p>
+          Un jardín-obra de duendes auténticos, creado por Fito Girolami (Argentina) y Catalina Lucz-Ligeti (Chile) en Baños de Agua Santa, Ecuador. No es parque temático: es una invitación a ver con otros ojos.
+        </p>
+        <div class="buttons">
+          <a class="btn" href="#visitar">Cómo visitarnos</a>
+          <a class="btn alt" href="https://instagram.com/lacasadelduende_ec" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section id="historia">
+      <div class="wrap">
+        <div class="section-title"><h2>Nuestra historia</h2></div>
+        <p class="subtitle">Fundada en 2018 en Baños de Agua Santa. La Aldea Mágica nace como extensión íntima de La Casa del Duende (2013), para que cada visitante se encuentre con la obra sin espectáculos ni supersticiones.</p>
+        <div class="grid grid-2">
+          <div class="card">
+            <p>
+              Cada figura es un habitante único, hecho a mano, con alma. Nos alejamos de lo comercial y de los relatos virales sin raíz: preferimos el silencio del jardín, la risa inesperada y la imaginación despierta. Esta es una experiencia artística que se recorre a paso lento, con respeto por el símbolo y por la naturaleza.
+            </p>
+          </div>
+          <div class="grid grid-3">
+            <div class="tile"><img src="/assets/galeria-1.jpg" alt="Detalle de la Aldea 1"></div>
+            <div class="tile"><img src="/assets/galeria-2.jpg" alt="Detalle de la Aldea 2"></div>
+            <div class="tile"><img src="/assets/galeria-3.jpg" alt="Detalle de la Aldea 3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia">
+      <div class="wrap">
+        <div class="section-title"><h2>La experiencia</h2></div>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Recorrido libre</h3>
+            <p class="subtitle">Camina sin prisa. Deja que el jardín te encuentre.</p>
+          </div>
+          <div class="card">
+            <h3>Acústicos íntimos</h3>
+            <p class="subtitle">Pequeños conciertos y lecturas entre duendes (agenda esporádica).</p>
+          </div>
+          <div class="card">
+            <h3>Mapas y señales</h3>
+            <p class="subtitle">Se llega solo con indicaciones oficiales (Google Maps). Evitamos enganchadores.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISITAR -->
+    <section id="visitar">
+      <div class="wrap">
+        <div class="section-title"><h2>Cómo visitarnos</h2></div>
+        <p class="subtitle">No vendemos entradas en el centro ni trabajamos con enganchadores. Sigue únicamente las indicaciones oficiales de Google Maps.</p>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Ubicaciones oficiales</h3>
+            <ul class="list">
+              <li>
+                <div>📍</div>
+                <div>
+                  <strong>La Aldea Mágica</strong><br>
+                  <span class="badge">Jardín‑obra (principal)</span><br>
+                  <a class="subtitle" target="_blank" rel="noopener" href="https://maps.app.goo.gl/Exm64UHQDLVsebL7A">Abrir en Google Maps</a>
+                </div>
+              </li>
+              <li>
+                <div>📍</div>
+                <div>
+                  <strong>La Casa del Duende</strong><br>
+                  <span class="badge">Origen (2013) / punto de contacto</span><br>
+                  <a class="subtitle" target="_blank" rel="noopener" href="https://maps.app.goo.gl/iV3AUj4XoAAG9NqWA">Abrir en Google Maps</a>
+                </div>
+              </li>
+            </ul>
+            <p class="subtitle" style="margin-top:12px">
+              <strong>Horarios:</strong> fines de semana y feriados (consulta por disponibilidad entre semana).<br>
+              <strong>Reservas:</strong> escríbenos por WhatsApp o Instagram para coordinar.
+            </p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <a class="btn" target="_blank" rel="noopener" href="https://wa.me/">WhatsApp</a>
+              <a class="btn alt" target="_blank" rel="noopener" href="https://instagram.com/lacasadelduende_ec">Instagram</a>
+              <a class="btn" href="mailto:hola@aldeamagica.art">Correo</a>
+            </div>
+          </div>
+          <div class="tile">
+            <!-- Reemplaza el src del iframe por el de tu ubicación exacta si lo deseas -->
+            <iframe title="Mapa La Aldea Mágica" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-1!2d-78.4200!3d-1.4000!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLa%20Aldea%20M%C3%A1gica!5e0!3m2!1ses!2sec!4v1680000000000" style="width:100%;height:420px;border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria">
+      <div class="wrap">
+        <div class="section-title"><h2>Galería</h2></div>
+        <p class="subtitle">Reemplaza estas imágenes por las tuyas en la carpeta <code>/assets/</code>.</p>
+        <div class="grid grid-3">
+          <div class="tile"><img src="/assets/galeria-4.jpg" alt="Galería 1"></div>
+          <div class="tile"><img src="/assets/galeria-5.jpg" alt="Galería 2"></div>
+          <div class="tile"><img src="/assets/galeria-6.jpg" alt="Galería 3"></div>
+          <div class="tile"><img src="/assets/galeria-7.jpg" alt="Galería 4"></div>
+          <div class="tile"><img src="/assets/galeria-8.jpg" alt="Galería 5"></div>
+          <div class="tile"><img src="/assets/galeria-9.jpg" alt="Galería 6"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ / LICENCIAS -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-title"><h2>Preguntas frecuentes</h2></div>
+        <details>
+          <summary>¿Es un parque temático?</summary>
+          <p>No. Es una obra artística íntima y silenciosa. Pedimos respeto, cuidado y tiempo para la contemplación.</p>
+        </details>
+        <details>
+          <summary>¿Se necesita guía?</summary>
+          <p>No. El recorrido es libre. En ocasiones hay anfitriones para conversar y compartir la historia.</p>
+        </details>
+        <details>
+          <summary>¿Puedo tomar fotos?</summary>
+          <p>Sí, para uso personal. Para usos comerciales o prensa, por favor escríbenos.</p>
+        </details>
+        <details>
+          <summary>¿Venden rituales o activaciones?</summary>
+          <p>No. Rechazamos supersticiones comerciales. Aquí cuidamos el símbolo, no lo mercantilizamos.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="licencias">
+      <div class="wrap">
+        <div class="section-title"><h2>Licencias y créditos</h2></div>
+        <div class="card">
+          <p class="subtitle">
+            © <span id="year"></span> Fito Girolami & Catalina Lucz-Ligeti. Todo el contenido original de La Aldea Mágica está protegido por licencias Creative Commons. Salvo indicación expresa, aplicamos
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" target="_blank" rel="noopener">CC BY‑NC‑ND 4.0</a> para imágenes, textos y audiovisuales. Comparte siempre con atribución, sin usos comerciales ni obras derivadas.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong>La Aldea Mágica</strong> — Baños de Agua Santa, Ecuador. Fundada en 2018.<br>
+        <a href="https://maps.app.goo.gl/Exm64UHQDLVsebL7A" target="_blank" rel="noopener">Cómo llegar</a> ·
+        <a href="https://instagram.com/lacasadelduende_ec" target="_blank" rel="noopener">Instagram</a> ·
+        <a href="mailto:hola@aldeamagica.art">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
