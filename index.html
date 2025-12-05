@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>La Aldea Mágica | El Jardín de Duendes Original en Baños de Agua Santa</title>
-  <meta name="description" content="¿Buscas qué hacer en Baños de Agua Santa? Vení a descubrir La Aldea Mágica: el jardín de duendes original que transformó la ciudad. Obra viva, filosofía invisible y naturaleza en silencio." />
+  <meta name="description" content="¿Buscas qué hacer en Baños de Agua Santa? Vení a descubrir La Aldea Mágica: el jardín de duendes original que transformó la ciudad. Obra viva, filosofía invisible y naturaleza en silencio, lejos de las copias comerciales." />
   <meta name="author" content="Fito Girolami, Catalina Lucz-Ligeti" />
-  <meta name="keywords" content="qué hacer en Baños, duendes Baños Ecuador, La Aldea Mágica, arte en baños, Fito Girolami, turismo cultural, filosofía invisible" />
+  <meta name="keywords" content="qué hacer en Baños, duendes Baños Ecuador, La Aldea Mágica, arte en baños, Fito Girolami, turismo cultural, filosofía invisible, competencia desleal Baños" />
   <link rel="canonical" href="https://aldeamagica.art/" />
   <meta name="robots" content="index,follow"/>
 
   <meta property="og:title" content="La Aldea Mágica | El jardín de duendes que transformó Baños de Agua Santa" />
-  <meta property="og:description" content="Vení a descubrir el jardín de duendes original de Baños de Agua Santa. Filosofía invisible, arte vivo y naturaleza, lejos de las copias comerciales." />
-  <meta property="og:image" content="https://aldeamagica.art/imagenes/aldea%20baner.jpg" />
+  <meta property="og:description" content="Vení a descubrir el jardín de duendes original de Baños de Agua Santa. Filosofía invisible, arte vivo y naturaleza, lejos de las copias y del turismo de espectáculo." />
+  <meta property="og:image" content="https://aldeamagica.art/imagenes/Aldea%20Banner.jpg" />
   <meta property="og:url" content="https://aldeamagica.art/" />
   <meta property="og:type" content="website" />
 
@@ -102,11 +102,13 @@
       justify-content: center;
       color: #fff;
       overflow: hidden;
+      padding-top: 70px; /* compensa el header fijo */
+      box-sizing: border-box;
     }
     .hero-bg {
       position: absolute;
       top: 0; left: 0; width: 100%; height: 100%;
-      background: url('/imagenes/aldea%20baner.jpg') center/cover no-repeat;
+      background: url('/imagenes/Aldea%20Banner.jpg') center/cover no-repeat;
       z-index: -2;
       filter: brightness(0.6);
       background-attachment: fixed; /* Parallax simple */
@@ -124,6 +126,10 @@
       max-width: 860px;
       padding: 20px;
       animation: fadeInUP 1.2s ease-out;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
     }
     .hero h1 {
       font-size: clamp(2.6rem, 5vw, 4.6rem);
@@ -236,7 +242,7 @@
       .grid-2 { grid-template-columns: 1fr; }
       .gallery-masonry { column-count: 1; }
       .hero h1 { font-size: 2.3rem; }
-      .hero { height: 90vh; }
+      .hero { height: 90vh; padding-top: 80px; }
     }
 
     /* Animaciones Scroll */
@@ -254,7 +260,7 @@
         "@type": "TouristAttraction",
         "@id": "https://aldeamagica.art/#attraction",
         "name": "La Aldea Mágica",
-        "description": "El jardín-obra vivo de duendes original en Baños de Agua Santa. Una experiencia artística y simbólica que forma parte del mito moderno de los duendes creado por Fito Girolami y Catalina Lucz-Ligeti.",
+        "description": "El jardín-obra vivo de duendes original en Baños de Agua Santa. Experiencia artística y simbólica que forma parte del mito moderno de los duendes creado por Fito Girolami y Catalina Lucz-Ligeti.",
         "url": "https://aldeamagica.art/",
         "founder": [
           {
@@ -273,7 +279,7 @@
           "addressRegion": "Tungurahua",
           "addressCountry": "EC"
         },
-        "image": "https://aldeamagica.art/imagenes/aldea%20baner.jpg",
+        "image": "https://aldeamagica.art/imagenes/Aldea%20Banner.jpg",
         "openingHoursSpecification": [
           {
             "@type":"OpeningHoursSpecification",
@@ -444,32 +450,81 @@
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- FAQ / DUDAS -->
     <section id="faq" class="reveal" style="padding-top:20px; padding-bottom:60px;">
-      <div class="wrap" style="max-width:800px;">
+      <div class="wrap" style="max-width:900px;">
         <div class="section-header">
-            <h3>Preguntas frecuentes</h3>
+            <h3>Dudas antes de venir</h3>
+            <p>Algunas preguntas que suelen hacernos quienes buscan algo distinto a lo turístico de siempre.</p>
         </div>
+
+        <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
+          <summary style="font-weight:bold; cursor:pointer;">¿Por qué en puntos de información a veces no nos hablan de La Aldea Mágica?</summary>
+          <p style="margin-top:10px; font-size:0.95rem;">
+            La Aldea Mágica es un proyecto independiente, creado por artistas que viven y trabajan aquí.
+            No formamos parte de paquetes ni de circuitos armados por agencias, y eso a veces incomoda a
+            quienes dependen de comisiones y acuerdos comerciales.
+          </p>
+          <p style="margin-top:10px; font-size:0.95rem;">
+            Hemos documentado situaciones que consideramos <strong>competencia desleal</strong>: omisiones,
+            desinformación o desvío intencional hacia espacios que imitan la estética del duende pero no
+            reconocen su origen. Toda esa evidencia está publicada en nuestra sección de
+            <a href="/transparencia.html">transparencia</a>, para que cualquiera pueda revisarla.
+          </p>
+          <p style="margin-top:10px; font-size:0.95rem;">
+            Por eso, si en un punto de información no te mencionan La Aldea Mágica o hablan mal de nuestro
+            trabajo, te invitamos a hacer algo simple: <strong>vení, recorre, y sacá tus propias conclusiones</strong>.
+          </p>
+        </details>
+
         <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
             <summary style="font-weight:bold; cursor:pointer;">¿Es apto para niños?</summary>
             <p style="margin-top:10px; font-size:0.95rem;">
-              Sí, pero pedimos a las familias que acompañen el recorrido como una experiencia de contemplación,
-              no como parque de juegos. Las obras se miran y se respetan: muchas están a ras del suelo.
+              Sí, claro. Muchos niños sienten afinidad inmediata con los duendes y con el jardín.
+              Solo pedimos algo importante: que los adultos acompañen la experiencia con honestidad y cuidado.
+            </p>
+            <p style="margin-top:10px; font-size:0.95rem;">
+              Creemos que la infancia no necesita <strong>miedo ni mentiras</strong> para “funcionar”.
+              Un chiste de un adulto puede ser un recuerdo lindo… o un pequeño trauma. Preferimos que a los niños
+              se les hable de los duendes como lo que son aquí: símbolos de cuidado, humor y respeto por la naturaleza,
+              no amenazas ni castigos.
+            </p>
+            <p style="margin-top:10px; font-size:0.95rem;">
+              Las obras se miran, no se trepan. Si tu hijo o hija es curioso (como casi todos), te pedimos que
+              lo acompañes de cerca para que el jardín siga siendo un lugar seguro para todos.
             </p>
         </details>
+
         <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
             <summary style="font-weight:bold; cursor:pointer;">¿Puedo llevar mascotas?</summary>
             <p style="margin-top:10px; font-size:0.95rem;">
-              Amamos los animales, pero por la delicadeza del jardín y la cantidad de detalles pequeños,
-              preferimos evitar el ingreso de mascotas grandes. Consulta si tienes dudas específicas.
+              Amamos los animales y entendemos que muchas personas viajan con sus compañeros peludos.
+              Por la delicadeza del jardín y las obras a ras de suelo, el ingreso de mascotas se maneja con
+              <strong>criterio y supervisión directa</strong> de sus dueños.
+            </p>
+            <p style="margin-top:10px; font-size:0.95rem;">
+              Lo básico: correa, respeto por el espacio de otras personas y disposición a recoger cualquier
+              desecho. Si el animal es muy inquieto o grande, es posible que recomendemos un recorrido más breve
+              o en horarios menos concurridos.
+            </p>
+            <p style="margin-top:10px; font-size:0.95rem;">
+              En caso de duda, puedes escribirnos antes por WhatsApp y vemos juntos la mejor forma de que tu
+              visita sea cómoda para ti, para tu mascota y para la Aldea.
             </p>
         </details>
+
         <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
             <summary style="font-weight:bold; cursor:pointer;">¿Quiénes crearon La Aldea Mágica?</summary>
             <p style="margin-top:10px; font-size:0.95rem;">
               La Aldea Mágica forma parte de la obra iniciada en 2013 con <strong>La Casa del Duende</strong>,
               creada por los artistas independientes <strong>Fito Girolami</strong> y <strong>Catalina Lucz-Ligeti</strong>.
-              Ellos impulsaron el mito moderno de los duendes en Baños, hoy replicado en muchas propuestas, pero originado aquí.
+              Ellos impulsaron el mito moderno de los duendes en Baños, hoy replicado en muchas propuestas,
+              pero originado aquí.
+            </p>
+            <p style="margin-top:10px; font-size:0.95rem;">
+              Si te interesa la parte más profunda de esta historia, podés explorar la documentación y las
+              publicaciones académicas enlazadas desde la página de
+              <a href="https://lacasadelduende.art/" target="_blank" rel="noopener">La Casa del Duende</a>.
             </p>
         </details>
       </div>
@@ -521,3 +576,4 @@
 
 </body>
 </html>
+
