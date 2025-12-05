@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Transparencia | La Aldea Mágica & La Casa del Duende</title>
+  <meta name="description" content="Documentación pública, DOIs, evidencias y cronología del trabajo de La Aldea Mágica y La Casa del Duende en Baños de Agua Santa, Ecuador. Registro de obra, marca, competencia desleal y sistema de audio guía simbólica (patente en trámite)." />
+  <meta name="author" content="Fito Girolami, Catalina Lucz-Ligeti" />
+  <link rel="canonical" href="https://aldeamagica.art/transparencia.html" />
+  <meta name="robots" content="index,follow"/>
+
+  <meta property="og:title" content="Transparencia | La Aldea Mágica & La Casa del Duende" />
+  <meta property="og:description" content="Acceso abierto a documentos, DOIs y evidencias que respaldan la historia y la defensa simbólica de La Aldea Mágica y La Casa del Duende." />
+  <meta property="og:image" content="https://aldeamagica.art/imagenes/AldeaBanner.jpg" />
+  <meta property="og:url" content="https://aldeamagica.art/transparencia.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="/imagenes/favicon.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fdfbf7;
+      --text: #2c2c2c;
+      --primary: #2f4f4f;
+      --accent: #d4af37;
+      --dark-bg: #111111;
+      --light-gray: #f4f4f4;
+      --line: #e3dfd5;
+      --radius: 12px;
+      --shadow: 0 10px 30px -10px rgba(0,0,0,0.15);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .logo {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    img { max-width: 100%; height: auto; display: block; border-radius: var(--radius); }
+    a { text-decoration: none; color: inherit; transition: 0.25s; }
+    a:hover { color: var(--accent); }
+
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(253, 251, 247, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+    .logo {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      color: var(--dark-bg);
+    }
+    .menu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .menu a {
+      opacity: 0.8;
+      padding: 6px 8px;
+      border-radius: 999px;
+    }
+    .menu a:hover,
+    .menu a[aria-current="page"] {
+      opacity: 1;
+      background: rgba(0,0,0,0.04);
+    }
+
+    /* Hero */
+    .hero {
+      padding-top: 100px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--line);
+      background: radial-gradient(circle at 0% 0%, rgba(212,175,55,0.12), transparent 55%);
+    }
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      color: #6f6350;
+      margin-bottom: 8px;
+    }
+    .hero h1 {
+      font-size: clamp(2.1rem, 3.2vw, 2.7rem);
+      margin: 6px 0 12px;
+    }
+    .hero p {
+      font-size: 1.02rem;
+      color: #555;
+      max-width: 720px;
+    }
+    .hero-note {
+      margin-top: 12px;
+      padding: 10px 14px;
+      border-left: 3px solid var(--accent);
+      background: rgba(0,0,0,0.02);
+      font-size: 0.92rem;
+      color: #555;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-header {
+      margin-bottom: 24px;
+    }
+    .section-header h2 {
+      font-size: 1.7rem;
+      margin: 0 0 6px;
+    }
+    .section-header p {
+      margin: 0;
+      color: #666;
+      max-width: 700px;
+    }
+
+    /* Cards / bloques */
+    .grid {
+      display: grid;
+      gap: 22px;
+    }
+    @media (min-width: 860px) {
+      .grid-2 {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: flex-start;
+      }
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+      }
+    }
+
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 22px 20px;
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .card small {
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    ul.links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.links li {
+      padding: 6px 0;
+      border-bottom: 1px dashed #e0dbd0;
+      font-size: 0.96rem;
+    }
+    ul.links li:last-child {
+      border-bottom: none;
+    }
+    ul.links span.label {
+      font-weight: 600;
+      color: #444;
+    }
+
+    code {
+      font-size: 0.8rem;
+      background: #f3efe7;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    .highlight {
+      background: #111;
