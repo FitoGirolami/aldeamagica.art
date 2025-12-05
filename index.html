@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>La Aldea Mágica | El Jardín de Duendes Original en Baños de Agua Santa</title>
-  <meta name="description" content="¿Buscas qué hacer en Baños de Agua Santa? Visita La Aldea Mágica, la obra original de duendes creada por los artistas Fito Girolami y Catalina Lucz-Ligeti. Arte, naturaleza y misticismo real." />
+  <meta name="description" content="¿Buscas qué hacer en Baños de Agua Santa? Vení a descubrir La Aldea Mágica: el jardín de duendes original que transformó la ciudad. Obra viva, filosofía invisible y naturaleza en silencio." />
   <meta name="author" content="Fito Girolami, Catalina Lucz-Ligeti" />
-  <meta name="keywords" content="qué hacer en Baños, duendes Baños Ecuador, La Aldea Mágica, arte en baños, Fito Girolami, turismo cultural" />
+  <meta name="keywords" content="qué hacer en Baños, duendes Baños Ecuador, La Aldea Mágica, arte en baños, Fito Girolami, turismo cultural, filosofía invisible" />
   <link rel="canonical" href="https://aldeamagica.art/" />
   <meta name="robots" content="index,follow"/>
 
-  <meta property="og:title" content="La Aldea Mágica | Obra Original en Baños de Agua Santa" />
-  <meta property="og:description" content="El jardín de duendes auténtico. Una experiencia de arte y silencio creada por Fito Girolami y Catalina Lucz-Ligeti." />
+  <meta property="og:title" content="La Aldea Mágica | El jardín de duendes que transformó Baños de Agua Santa" />
+  <meta property="og:description" content="Vení a descubrir el jardín de duendes original de Baños de Agua Santa. Filosofía invisible, arte vivo y naturaleza, lejos de las copias comerciales." />
   <meta property="og:image" content="https://aldeamagica.art/imagenes/aldea%20baner.jpg" />
   <meta property="og:url" content="https://aldeamagica.art/" />
   <meta property="og:type" content="website" />
@@ -29,7 +29,7 @@
       --bg: #fdfbf7;
       --text: #2c2c2c;
       --primary: #2f4f4f; /* Dark Slate Gray */
-      --accent: #d4af37; /* Gold */
+      --accent: #d4af37;  /* Gold */
       --dark-bg: #1a1a1a;
       --light-gray: #f4f4f4;
       --radius: 12px;
@@ -64,7 +64,7 @@
       top: 0;
       width: 100%;
       z-index: 100;
-      background: rgba(253, 251, 247, 0.85);
+      background: rgba(253, 251, 247, 0.88);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(0,0,0,0.05);
       transition: all 0.3s ease;
@@ -95,7 +95,8 @@
     /* Hero Section Parallax */
     .hero {
       position: relative;
-      height: 90vh;
+      height: 100vh;
+      min-height: 90vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -106,29 +107,42 @@
       position: absolute;
       top: 0; left: 0; width: 100%; height: 100%;
       background: url('/imagenes/aldea%20baner.jpg') center/cover no-repeat;
-      z-index: -1;
+      z-index: -2;
       filter: brightness(0.6);
+      background-attachment: fixed; /* Parallax simple */
     }
-    /* Efecto Parallax simple */
-    .hero-bg { background-attachment: fixed; } 
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 0%, rgba(0,0,0,0.6), transparent 55%),
+                  linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+      z-index: -1;
+    }
 
     .hero-content {
       text-align: center;
-      max-width: 800px;
+      max-width: 860px;
       padding: 20px;
       animation: fadeInUP 1.2s ease-out;
     }
     .hero h1 {
-      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-size: clamp(2.6rem, 5vw, 4.6rem);
       color: #fff;
       margin-bottom: 10px;
-      text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      text-shadow: 0 4px 10px rgba(0,0,0,0.6);
     }
     .hero p {
       font-size: 1.2rem;
-      margin-bottom: 30px;
-      opacity: 0.9;
+      margin-bottom: 28px;
+      opacity: 0.94;
       font-weight: 300;
+    }
+    .hero-tagline {
+      font-size: 0.95rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #f0e6c8;
     }
     
     /* Secciones Generales */
@@ -139,7 +153,7 @@
       content: ''; display: block; width: 60px; height: 3px; background: var(--accent);
       margin: 10px auto 0;
     }
-    .section-header p { max-width: 700px; margin: 0 auto; color: #666; font-size: 1.1rem; }
+    .section-header p { max-width: 700px; margin: 0 auto; color: #666; font-size: 1.05rem; }
 
     /* Grid Layouts */
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
@@ -156,15 +170,38 @@
     }
     .feature-card:hover { transform: translateY(-5px); }
 
-    /* Sección Autoría (Importante SEO) */
-    .authorship { background: var(--light-gray); }
-    .author-content blockquote {
+    /* Sección Filosofía Invisible */
+    .filosofia {
+      background: #111;
+      color: #eee;
+      position: relative;
+      overflow: hidden;
+    }
+    .filosofia::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background: radial-gradient(circle at 10% 0%, rgba(212,175,55,0.16), transparent 55%),
+                  radial-gradient(circle at 90% 100%, rgba(255,255,255,0.06), transparent 60%);
+      opacity: 0.9;
+    }
+    .filosofia-inner {
+      position: relative;
+      z-index: 1;
+    }
+    .filosofia h2 {
+      color: #f7f2dc;
+    }
+    .filosofia p {
+      color: #d3d3d3;
+    }
+    .filosofia blockquote {
       font-family: 'Cinzel', serif;
-      font-size: 1.5rem;
-      color: var(--primary);
+      font-size: 1.4rem;
+      color: #f5e6b7;
       border-left: 4px solid var(--accent);
       padding-left: 20px;
-      margin: 20px 0;
+      margin: 24px 0;
     }
 
     /* Galería Masonry (Estilo Mosaico Artístico) */
@@ -198,7 +235,8 @@
       .menu { gap: 15px; margin-top: 10px; flex-wrap: wrap; justify-content: center; }
       .grid-2 { grid-template-columns: 1fr; }
       .gallery-masonry { column-count: 1; }
-      .hero h1 { font-size: 2.2rem; }
+      .hero h1 { font-size: 2.3rem; }
+      .hero { height: 90vh; }
     }
 
     /* Animaciones Scroll */
@@ -216,7 +254,7 @@
         "@type": "TouristAttraction",
         "@id": "https://aldeamagica.art/#attraction",
         "name": "La Aldea Mágica",
-        "description": "El jardín-obra vivo de duendes original en Baños de Agua Santa. Una experiencia artística creada por Fito Girolami.",
+        "description": "El jardín-obra vivo de duendes original en Baños de Agua Santa. Una experiencia artística y simbólica que forma parte del mito moderno de los duendes creado por Fito Girolami y Catalina Lucz-Ligeti.",
         "url": "https://aldeamagica.art/",
         "founder": [
           {
@@ -262,7 +300,8 @@
       <a href="#" class="logo">La Aldea Mágica</a>
       <ul class="menu">
         <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#autores">Autores</a></li>
+        <li><a href="#filosofia">Filosofía invisible</a></li>
+        <li><a href="#rincones">Rincones</a></li>
         <li><a href="#visitar">Visitar</a></li>
         <li><a href="#faq">Dudas</a></li>
       </ul>
@@ -270,89 +309,129 @@
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1>Más que un paseo, un encuentro</h1>
-        <p>El jardín de duendes original de Baños de Agua Santa. Arte, silencio y naturaleza.</p>
-        <div style="margin-top:20px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
-            <a href="#visitar" class="btn">Cómo llegar</a>
-            <a href="https://instagram.com/lacasadelduende_ec" target="_blank" class="btn outline" style="border-color:#fff; color:#fff">Ver en Instagram</a>
+        <div class="hero-tagline">Jardín de duendes original · Baños de Agua Santa</div>
+        <h1>Vení a descubrir los duendes que transformaron Baños</h1>
+        <p>
+          La Aldea Mágica no es un parque temático: es un jardín vivo donde habitan los duendes
+          que dieron origen al mito moderno de Baños de Agua Santa. Arte, silencio y señales
+          para quienes todavía saben mirar.
+        </p>
+        <div style="margin-top:22px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+            <a href="#visitar" class="btn">Quiero visitarla</a>
+            <a href="https://instagram.com/lacasadelduende_ec" target="_blank" class="btn outline" style="border-color:#fff; color:#fff">Ver adelantos en Instagram</a>
         </div>
       </div>
     </section>
 
+    <!-- QUÉ HACER / EXPERIENCIA -->
     <section id="experiencia" class="reveal">
       <div class="wrap">
         <div class="section-header">
           <h2>Qué hacer en Baños de Agua Santa</h2>
-          <p>Si buscas una experiencia auténtica, lejos del ruido y de las copias comerciales, te invitamos a cruzar el umbral.</p>
+          <p>
+            Entre tantas ofertas turísticas, aquí hay algo distinto: un jardín-obra de duendes que no se vende como espectáculo,
+            sino como experiencia íntima. Si buscas un lugar para recordar por qué Baños se volvió “tierra de duendes”, este es el origen.
+          </p>
         </div>
         
         <div class="grid-3">
           <div class="feature-card">
-            <h3>🎨 Arte Vivo</h3>
-            <p>No encontrarás muñecos de plástico industrial. Cada habitante de la aldea es una escultura original hecha a mano, integrada en el musgo y la piedra.</p>
+            <h3>🎨 Arte vivo entre musgos</h3>
+            <p>No vas a encontrar muñecos de plástico industrial. Cada habitante de la Aldea es una escultura original, pensada para convivir con el musgo, la piedra y la madera.</p>
           </div>
           <div class="feature-card">
-            <h3>🌿 Conexión Real</h3>
-            <p>Un recorrido diseñado para bajar el ritmo. Sin parlantes ruidosos ni guías apurados. Es tu tiempo para observar y sentir.</p>
+            <h3>🌿 Tiempo lento, sin ruido</h3>
+            <p>El recorrido está diseñado para bajar el ritmo: sin parlantes estridentes ni guías apurados. Caminás a tu paso, escuchando lo que el jardín y tu imaginación tengan para decir.</p>
           </div>
           <div class="feature-card">
-            <h3>✨ Sin Supersticiones</h3>
-            <p>Nos alejamos de la venta de amuletos falsos. Aquí el duende es un símbolo de cuidado de la naturaleza y picardía, no un objeto de consumo.</p>
+            <h3>✨ Mito moderno, no superstición</h3>
+            <p>Aquí no vendemos amuletos ni “activaciones”. El duende es un símbolo de cuidado, picardía y presencia. La magia está en cómo mirás, no en lo que compras.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="autores" class="authorship reveal">
-      <div class="wrap grid-2">
-        <div class="author-img">
-            <img src="/imagenes/aldea1.jpg" alt="Obra original de Fito Girolami en La Aldea Mágica" style="box-shadow: var(--shadow);">
+    <!-- FILOSOFÍA INVISIBLE -->
+    <section id="filosofia" class="filosofia reveal">
+      <div class="wrap filosofia-inner">
+        <div class="section-header">
+          <h2>Filosofía Invisible</h2>
+          <p>
+            Detrás de cada figura hay algo que no se ve en las fotos: una forma de estar en el mundo.
+            La Aldea Mágica es parte de una investigación viva sobre el duende como símbolo y como
+            guardián de lo que no se deja capturar por el turismo rápido.
+          </p>
         </div>
-        <div class="author-content">
-          <h2>El Origen del Concepto</h2>
-          <p>En 2013 nació <strong>La Casa del Duende</strong>, y en 2018 expandimos ese universo creando <strong>La Aldea Mágica</strong>. Somos los creadores originales de este concepto en la ciudad.</p>
-          <blockquote>
-            "No creamos un parque temático, creamos un refugio para la imaginación."
-          </blockquote>
-          <p>Fundado por los artistas independientes <strong>Fito Girolami</strong> (Argentina) y <strong>Catalina Lucz-Ligeti</strong> (Chile). Cada rincón de este jardín es una declaración de amor al arte y respeto por Baños de Agua Santa.</p>
-          <a href="https://lacasadelduende.art/" target="_blank" class="btn outline" style="margin-top:15px;">Conoce nuestra historia</a>
+
+        <div class="grid-2">
+          <div>
+            <blockquote>
+              “El duende no es un muñequito: es la manera en que la Tierra te guiña un ojo para recordarte
+              que no todo está bajo control.”
+            </blockquote>
+            <p>
+              A esto lo llamamos <strong>Filosofía Invisible</strong>: cuidar lo que no se ve pero se siente.
+              El silencio del jardín, el crujido de la madera vieja, la piedra que alguien puso ahí hace años
+              sin dejar su nombre. Todo eso es parte de la obra.
+            </p>
+            <p>
+              Venir a la Aldea es aceptar una invitación sencilla: dejar por un rato el modo “foto para redes”
+              y entrar en modo escucha. A veces el duende se manifiesta en una risa compartida, en un recuerdo,
+              en una idea que aparece de golpe mientras caminás.
+            </p>
+            <p>
+              Si algo de esto te resuena, probablemente este lugar te estaba esperando hace tiempo.
+            </p>
+          </div>
+          <div>
+            <img src="/imagenes/aldea1.jpg" alt="Rincón simbólico en La Aldea Mágica" style="box-shadow: var(--shadow);">
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="reveal">
+    <!-- RINCONES / GALERÍA -->
+    <section id="rincones" class="reveal">
       <div class="wrap">
         <div class="section-header">
             <h2>Rincones de la Aldea</h2>
+            <p>Estas imágenes son apenas un anticipo. Lo importante no está en la foto, está en el momento en que estés ahí.</p>
         </div>
         <div class="gallery-masonry">
-          <div class="gallery-item"><img src="/imagenes/aldea2.jpg" alt="Sendero mágico" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea4.jpg" alt="Escultura de duende" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea5.jpg" alt="Detalle naturaleza" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea6.jpg" alt="Luces en el jardín" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea7.jpg" alt="Arte en madera" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea9.jpg" alt="Ambiente nocturno" loading="lazy"></div>
+          <div class="gallery-item"><img src="/imagenes/aldea2.jpg" alt="Sendero mágico entre árboles y figuras" loading="lazy"></div>
+          <div class="gallery-item"><img src="/imagenes/aldea4.jpg" alt="Escultura de duende integrada al paisaje" loading="lazy"></div>
+          <div class="gallery-item"><img src="/imagenes/aldea5.jpg" alt="Detalle de naturaleza y símbolo" loading="lazy"></div>
+          <div class="gallery-item"><img src="/imagenes/aldea6.jpg" alt="Luces suaves al caer la tarde en el jardín" loading="lazy"></div>
+          <div class="gallery-item"><img src="/imagenes/aldea7.jpg" alt="Trabajo en madera y texturas antiguas" loading="lazy"></div>
+          <div class="gallery-item"><img src="/imagenes/aldea9.jpg" alt="Ambiente nocturno en la Aldea Mágica" loading="lazy"></div>
         </div>
       </div>
     </section>
 
+    <!-- VISITAR -->
     <section id="visitar" class="reveal" style="background:#fff">
       <div class="wrap">
+        <div class="section-header">
+          <h2>Planeá tu visita</h2>
+          <p>La Aldea Mágica no se vende en folletos masivos. Te contamos directamente cómo llegar y cómo cuidarla.</p>
+        </div>
         <div class="grid-2">
             <div>
-                <h2>Planea tu visita</h2>
-                <p>La Aldea Mágica funciona en horarios específicos para preservar la tranquilidad del lugar y de la obra.</p>
+                <p>Para preservar la tranquilidad del lugar y de la obra, trabajamos con horarios concretos y sin intermediarios.</p>
                 <ul style="list-style:none; padding:0; margin-top:30px;">
-                    <li style="margin-bottom:15px;"><strong>📅 Horarios:</strong> Sábados, Domingos y Feriados (10:00 - 18:00).</li>
-                    <li style="margin-bottom:15px;"><strong>📍 Ubicación:</strong> Vía a Runtún, Baños de Agua Santa.</li>
-                    <li style="margin-bottom:15px;"><strong>🎟️ Entradas:</strong> Directamente en la puerta. No tenemos vendedores en la calle.</li>
+                    <li style="margin-bottom:15px;"><strong>📅 Horarios:</strong> Sábados, domingos y feriados (10:00 - 18:00). Consulta por visitas especiales entre semana.</li>
+                    <li style="margin-bottom:15px;"><strong>📍 Ubicación:</strong> Zona alta de Baños de Agua Santa, vía a Runtún. Sigue solo las indicaciones oficiales.</li>
+                    <li style="margin-bottom:15px;"><strong>🎟️ Entradas:</strong> Directamente en la puerta. No tenemos “enganchadores” en el centro ni vendedores en la calle.</li>
                 </ul>
-                <div style="margin-top:30px; display:flex; gap:10px;">
-                    <a href="https://maps.app.goo.gl/Exm64UHQDLVsebL7A" target="_blank" class="btn">Ver Mapa en Google</a>
-                    <a href="https://wa.me/" class="btn outline">WhatsApp</a>
+                <p>Si venís con grupo, familia o en modo introspectivo, el jardín se adapta: la clave es el respeto.</p>
+                <div style="margin-top:30px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <a href="https://maps.app.goo.gl/Exm64UHQDLVsebL7A" target="_blank" class="btn">Ver mapa en Google</a>
+                    <a href="https://wa.me/" class="btn outline">Escribir por WhatsApp</a>
                 </div>
             </div>
             <div>
@@ -365,18 +444,33 @@
       </div>
     </section>
 
+    <!-- FAQ -->
     <section id="faq" class="reveal" style="padding-top:20px; padding-bottom:60px;">
       <div class="wrap" style="max-width:800px;">
         <div class="section-header">
-            <h3>Preguntas Frecuentes</h3>
+            <h3>Preguntas frecuentes</h3>
         </div>
         <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
             <summary style="font-weight:bold; cursor:pointer;">¿Es apto para niños?</summary>
-            <p style="margin-top:10px; font-size:0.95rem;">Sí, pero pedimos a los padres enseñar a los niños que es un lugar de contemplación, no un parque de juegos. Las obras se miran, no se tocan.</p>
+            <p style="margin-top:10px; font-size:0.95rem;">
+              Sí, pero pedimos a las familias que acompañen el recorrido como una experiencia de contemplación,
+              no como parque de juegos. Las obras se miran y se respetan: muchas están a ras del suelo.
+            </p>
         </details>
         <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
             <summary style="font-weight:bold; cursor:pointer;">¿Puedo llevar mascotas?</summary>
-            <p style="margin-top:10px; font-size:0.95rem;">Amamos los animales, pero por la delicadeza del jardín y las obras a ras de suelo, preferimos que no ingresen mascotas grandes.</p>
+            <p style="margin-top:10px; font-size:0.95rem;">
+              Amamos los animales, pero por la delicadeza del jardín y la cantidad de detalles pequeños,
+              preferimos evitar el ingreso de mascotas grandes. Consulta si tienes dudas específicas.
+            </p>
+        </details>
+        <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
+            <summary style="font-weight:bold; cursor:pointer;">¿Quiénes crearon La Aldea Mágica?</summary>
+            <p style="margin-top:10px; font-size:0.95rem;">
+              La Aldea Mágica forma parte de la obra iniciada en 2013 con <strong>La Casa del Duende</strong>,
+              creada por los artistas independientes <strong>Fito Girolami</strong> y <strong>Catalina Lucz-Ligeti</strong>.
+              Ellos impulsaron el mito moderno de los duendes en Baños, hoy replicado en muchas propuestas, pero originado aquí.
+            </p>
         </details>
       </div>
     </section>
@@ -393,11 +487,11 @@
         <div>
           <h4>Enlaces</h4>
           <p><a href="https://lacasadelduende.art/">La Casa del Duende</a></p>
-          <p><a href="https://instagram.com/lacasadelduende_ec">Instagram Oficial</a></p>
+          <p><a href="https://instagram.com/lacasadelduende_ec">Instagram oficial</a></p>
         </div>
         <div>
           <h4>Legal</h4>
-          <p>Obra protegida. Prohibida la copia.<br>
+          <p>Obra protegida. Prohibida la copia literal de contenidos y ambientación.<br>
           <a href="/transparencia.html">Transparencia</a></p>
         </div>
       </div>
