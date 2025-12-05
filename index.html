@@ -4,30 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>La Aldea Mágica | Jardín de duendes en Baños de Agua Santa, Ecuador</title>
-  <meta name="description" content="La Aldea Mágica es un jardín-obra vivo de duendes creado en 2018 por los artistas independientes Fito Girolami (Argentina) y Catalina Lucz-Ligeti (Chile) en Baños de Agua Santa, Ecuador. Experiencia artística íntima, no parque temático." />
+  <title>La Aldea Mágica | Qué hacer en Baños de Agua Santa: jardín de duendes original</title>
+  <meta name="description" content="¿Qué hacer en Baños de Agua Santa? La Aldea Mágica es un jardín-obra vivo de duendes creado en 2018 por los artistas independientes Fito Girolami y Catalina Lucz-Ligeti. Experiencia íntima, original y no turística en Baños, Ecuador." />
   <meta name="author" content="Fito Girolami, Catalina Lucz-Ligeti" />
+  <meta name="keywords" content="qué hacer en Baños, qué hacer en Baños de Agua Santa, duendes en Baños, La Aldea Mágica, jardín de duendes, turismo cultural, arte independiente" />
   <link rel="canonical" href="https://aldeamagica.art/" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"/>
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="La Aldea Mágica | Jardín de duendes en Baños de Agua Santa" />
+  <meta property="og:title" content="La Aldea Mágica | Qué hacer en Baños de Agua Santa" />
   <meta property="og:site_name" content="La Aldea Mágica" />
-  <meta property="og:description" content="Jardín-obra vivo de duendes. Experiencia íntima y simbólica en Baños de Agua Santa, creada por Fito Girolami y Catalina Lucz-Ligeti." />
-  <meta property="og:image" content="https://aldeamagica.art/assets/aldea-hero.jpg" />
+  <meta property="og:description" content="Jardín-obra vivo de duendes en Baños de Agua Santa. Experiencia íntima, simbólica y original creada por Fito Girolami y Catalina Lucz-Ligeti." />
+  <meta property="og:image" content="https://aldeamagica.art/imagenes/aldea%20baner.jpg" />
   <meta property="og:url" content="https://aldeamagica.art/" />
   <meta property="og:locale" content="es_EC" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="La Aldea Mágica | Jardín de duendes en Baños de Agua Santa" />
-  <meta name="twitter:description" content="Jardín-obra vivo de duendes. Experiencia íntima y simbólica en Baños de Agua Santa." />
-  <meta name="twitter:image" content="https://aldeamagica.art/assets/aldea-hero.jpg" />
+  <meta name="twitter:title" content="La Aldea Mágica | Qué hacer en Baños de Agua Santa" />
+  <meta name="twitter:description" content="Jardín-obra vivo de duendes y experiencia íntima en Baños de Agua Santa, Ecuador." />
+  <meta name="twitter:image" content="https://aldeamagica.art/imagenes/aldea%20baner.jpg" />
 
   <!-- Icons -->
-  <link rel="icon" href="/assets/favicon.png" />
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-  <link rel="preload" as="image" href="/assets/aldea-hero.jpg"/>
+  <link rel="icon" href="/imagenes/favicon.png" />
+  <link rel="apple-touch-icon" href="/imagenes/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="/imagenes/aldea%20baner.jpg"/>
 
   <!-- Styles -->
   <style>
@@ -54,8 +55,19 @@
 
     /* Hero */
     .hero{position:relative;min-height:85vh;display:grid;place-items:end;background:#000;color:#fff}
-    .hero::before{content:"";position:absolute;inset:0;background:url('/assets/aldea-hero.jpg') center/cover no-repeat;opacity:.9}
-    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,.4), transparent)}
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:url('/imagenes/aldea%20baner.jpg') center/cover no-repeat;
+      opacity:.9
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,.4), transparent)
+    }
     .hero .inner{position:relative;padding:64px 0}
     .pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
     .pill{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.35);padding:6px 12px;border-radius:999px;font-size:13px;background:rgba(0,0,0,.28)}
@@ -76,13 +88,14 @@
     @media (min-width:900px){
       .grid-2{grid-template-columns:1.15fr .85fr}
       .grid-3{grid-template-columns:repeat(3,1fr)}
+      .grid-4{grid-template-columns:repeat(4,1fr)}
     }
 
     .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
     .tile{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
     .tile img{height:190px;width:100%;object-fit:cover}
 
-    /* Visit */
+    /* Visit / list */
     .list{list-style:none;padding:0;margin:0}
     .list li{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--line)}
     .list li:last-child{border-bottom:0}
@@ -92,6 +105,9 @@
     details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px}
     details+details{margin-top:12px}
     summary{cursor:pointer;font-weight:600}
+
+    /* Embeds */
+    iframe.embed{width:100%;aspect-ratio:16/9;border:0;border-radius:18px}
 
     /* Footer */
     footer{border-top:1px solid var(--line);padding:38px 0;color:var(--muted);font-size:14px}
@@ -120,7 +136,7 @@
         "@id": "https://aldeamagica.art/#attraction",
         "name": "La Aldea Mágica",
         "url": "https://aldeamagica.art/",
-        "description": "Jardín-obra vivo de duendes, experiencia íntima y simbólica en Baños de Agua Santa, fundada en 2018 por los artistas independientes Fito Girolami y Catalina Lucz-Ligeti como extensión de La Casa del Duende (2013).",
+        "description": "Jardín-obra vivo de duendes en Baños de Agua Santa, Ecuador. Experiencia íntima y simbólica fundada en 2018 por los artistas independientes Fito Girolami y Catalina Lucz-Ligeti como extensión de La Casa del Duende (2013).",
         "founder": [
           {
             "@type": "Person",
@@ -142,9 +158,9 @@
           "addressCountry": "EC"
         },
         "image": [
-          "https://aldeamagica.art/assets/aldea-hero.jpg",
-          "https://aldeamagica.art/assets/galeria-1.jpg",
-          "https://aldeamagica.art/assets/galeria-2.jpg"
+          "https://aldeamagica.art/imagenes/aldea%20baner.jpg",
+          "https://aldeamagica.art/imagenes/aldea1.jpg",
+          "https://aldeamagica.art/imagenes/aldea2.jpg"
         ],
         "openingHoursSpecification": [
           {
@@ -177,12 +193,6 @@
                 "name":"Estación 1 - Muestra",
                 "contentUrl":"https://aldeamagica.art/audio/estacion-1.mp3",
                 "encodingFormat":"audio/mpeg"
-              },
-              {
-                "@type":"AudioObject",
-                "name":"Estación 2 - Muestra",
-                "contentUrl":"https://aldeamagica.art/audio/estacion-2.mp3",
-                "encodingFormat":"audio/mpeg"
               }
             ]
           }
@@ -199,7 +209,7 @@
         "@type": "WebPage",
         "@id":"https://aldeamagica.art/#webpage",
         "url":"https://aldeamagica.art/",
-        "name":"La Aldea Mágica — Jardín de duendes en Baños de Agua Santa",
+        "name":"La Aldea Mágica — Qué hacer en Baños de Agua Santa",
         "isPartOf":{"@id":"https://aldeamagica.art/#website"},
         "inLanguage":"es",
         "about":{"@id":"https://aldeamagica.art/#attraction"}
@@ -208,16 +218,6 @@
   }
   </script>
 
-  <!-- (Opcional) Analytics – solo si quieres medir tráfico -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCLBJT60LV"></script>
-  <script>
-    window.dataLayer=window.dataLayer||[];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config','G-NCLBJT60LV',{anonymize_ip:true});
-  </script>
-  -->
 </head>
 
 <body>
@@ -228,6 +228,7 @@
       <a class="logo" href="#inicio" aria-current="page">La Aldea Mágica</a>
       <nav aria-label="Principal">
         <ul>
+          <li><a href="#que-hacer">Qué hacer en Baños</a></li>
           <li><a href="#historia">Historia</a></li>
           <li><a href="#experiencia">Experiencia</a></li>
           <li><a href="#audio-guia" class="cta">Audio guía</a></li>
@@ -257,8 +258,42 @@
           <span>Documentación y evidencias públicas en <a style="margin-left:4px;text-decoration:underline" href="/transparencia.html">/transparencia</a>.</span>
         </div>
         <div class="buttons">
-          <a class="btn" href="#visitar">Cómo visitarnos</a>
+          <a class="btn" href="#que-hacer">Qué hacer en Baños</a>
           <a class="btn alt" href="https://instagram.com/lacasadelduende_ec" target="_blank" rel="noopener">Ver más en Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ HACER EN BAÑOS -->
+    <section id="que-hacer" class="reveal">
+      <div class="wrap">
+        <div class="section-title"><h2>Qué hacer en Baños de Agua Santa</h2></div>
+        <p class="subtitle">
+          Si buscas <strong>qué hacer en Baños de Agua Santa</strong> más allá de lo turístico, La Aldea Mágica es una de las experiencias originales de la ciudad:
+          un jardín-obra de duendes, arte independiente y silencio, a pocos minutos del centro pero lejos del ruido.
+        </p>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>1. Caminar entre duendes</h3>
+            <p class="subtitle">Recorre un jardín vivo con figuras originales, no copias de plástico. Cada rincón tiene una historia que se intuye más que se explica.</p>
+          </div>
+          <div class="card">
+            <h3>2. Ver el recorrido 360°</h3>
+            <p class="subtitle">Antes de venir, puedes explorar una parte de la experiencia en un recorrido virtual en 360°.</p>
+            <iframe class="embed"
+              src="https://kuula.co/share/collection/7qPbZ?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+              loading="lazy"
+              title="Recorrido virtual 360° por La Aldea Mágica"></iframe>
+          </div>
+          <div class="card">
+            <h3>3. Disfrutar un acústico íntimo</h3>
+            <p class="subtitle">En algunas fechas se realizan pequeños conciertos entre árboles, duendes y luces suaves. Sin escenario turístico; solo presencia.</p>
+            <iframe class="embed"
+              src="https://www.youtube.com/embed/QLpDZrOF9Vw"
+              title="Reel de La Aldea Mágica"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -283,13 +318,13 @@
             <p>
               La Aldea Mágica forma parte del ecosistema cultural independiente creado por Fito
               Girolami y Catalina Lucz-Ligeti, que incluye obra artística, archivo documental,
-              publicaciones y recorridos simbólicos.
+              publicaciones y recorridos simbólicos sobre el fenómeno del duende en Baños de Agua Santa.
             </p>
           </div>
           <div class="grid grid-3">
-            <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-1.jpg" alt="Detalle de figura de duende entre plantas"></div>
-            <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-2.jpg" alt="Sendero de la Aldea Mágica al atardecer"></div>
-            <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-3.jpg" alt="Rincón simbólico con piedra y musgos"></div>
+            <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea1.jpg" alt="Detalle de figura de duende entre plantas en La Aldea Mágica"></div>
+            <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea2.jpg" alt="Sendero de tierra y piedra en el jardín de la Aldea"></div>
+            <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea3.jpg" alt="Rincón simbólico con madera, piedra y musgos"></div>
           </div>
         </div>
       </div>
@@ -298,19 +333,19 @@
     <!-- EXPERIENCIA -->
     <section id="experiencia" class="reveal">
       <div class="wrap">
-        <div class="section-title"><h2>La experiencia</h2></div>
+        <div class="section-title"><h2>La experiencia en la Aldea</h2></div>
         <div class="grid grid-3">
           <div class="card">
             <h3>Recorrido libre</h3>
             <p class="subtitle">No hay apuro ni rutas rígidas. Caminas a tu ritmo, te detienes donde algo te llama y sigues cuando sientas que es momento.</p>
           </div>
           <div class="card">
-            <h3>Acústicos íntimos</h3>
-            <p class="subtitle">En algunas fechas hay conciertos pequeños y lecturas entre duendes. Sin escenario grande: solo jardín, sonido y presencia.</p>
+            <h3>Encuentros pequeños</h3>
+            <p class="subtitle">A veces hay anfitriones, lecturas o charlas espontáneas sobre la historia real del duende en Baños y la obra que lo originó.</p>
           </div>
           <div class="card">
-            <h3>Mapas y señales honestas</h3>
-            <p class="subtitle">Se llega únicamente con indicaciones oficiales (Google Maps). No trabajamos con enganchadores ni vendedores en el centro.</p>
+            <h3>Arte, naturaleza y tiempo</h3>
+            <p class="subtitle">No vendemos promesas de suerte: aquí se cuida el símbolo, la memoria del lugar y el tiempo que cada persona se regala a sí misma.</p>
           </div>
         </div>
       </div>
@@ -408,11 +443,11 @@
             </div>
           </div>
           <div class="tile">
-            <!-- Reemplaza el src del iframe por el de tu ubicación exacta -->
+            <!-- Reemplaza el src del iframe por el de tu ubicación exacta cuando quieras -->
             <iframe
+              class="embed"
               title="Mapa La Aldea Mágica"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-1!2d-78.4200!3d-1.4000!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLa%20Aldea%20M%C3%A1gica!5e0!3m2!1ses!2sec!4v1680000000000"
-              style="width:100%;height:420px;border:0"
+              src="https://www.google.com/maps/embed?pb="
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
@@ -424,15 +459,21 @@
     <!-- GALERÍA -->
     <section id="galeria" class="reveal">
       <div class="wrap">
-        <div class="section-title"><h2>Galería</h2></div>
-        <p class="subtitle">Reemplaza estas imágenes por tus fotos reales en la carpeta <code>/assets/</code> para que el sitio refleje el jardín actual.</p>
+        <div class="section-title"><h2>Galería de La Aldea Mágica</h2></div>
+        <p class="subtitle">Algunas escenas del jardín-obra. Las imágenes son solo un anticipo: la experiencia real sucede al caminar y escuchar.</p>
         <div class="grid grid-3">
-          <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-4.jpg" alt="Vista de sendero con figuras de la Aldea"></div>
-          <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-5.jpg" alt="Detalle de escultura de duende entre hojas"></div>
-          <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-6.jpg" alt="Rincón con piedras, madera y plantas"></div>
-          <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-7.jpg" alt="Jardín iluminado al atardecer"></div>
-          <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-8.jpg" alt="Detalle simbólico de puerta y raíces"></div>
-          <div class="tile"><img loading="lazy" width="600" height="400" src="/assets/galeria-9.jpg" alt="Zona de descanso rodeada de naturaleza"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea4.jpg" alt="Vista de sendero con figuras de duendes en La Aldea Mágica"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea5.jpg" alt="Detalle de escultura de duende junto a raíces y piedras"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea6.jpg" alt="Rincón con musgos, troncos y símbolos en la Aldea"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea7.jpg" alt="Zona de descanso rodeada de naturaleza en Baños de Agua Santa"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea8.jpg" alt="Detalle simbólico de puerta y madera en La Aldea Mágica"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea9.jpg" alt="Escena con piedras, hojas y figura feérica"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea10.jpg" alt="Pequeño altar natural con elementos del jardín"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea11.jpg" alt="Camino estrecho entre vegetación de la Aldea"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea12.jpg" alt="Duende observando el paisaje de Baños desde un rincón del jardín"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea13.jpg" alt="Escena nocturna o de atardecer con luces suaves"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea14.jpg" alt="Detalle de banco de madera y entorno natural"></div>
+          <div class="tile"><img loading="lazy" width="600" height="400" src="/imagenes/aldea15.jpg" alt="Composición simbólica con ramas, piedras y figuras"></div>
         </div>
       </div>
     </section>
