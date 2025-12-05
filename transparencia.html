@@ -225,4 +225,446 @@
 
     .highlight {
       background: #111;
+      color: #eee;
+      border-radius: 14px;
+      padding: 20px 18px;
+      margin-top: 10px;
+    }
+    .highlight p {
+      margin: 0;
+      color: #e4ded1;
+      font-size: 0.95rem;
+    }
 
+    /* Footer */
+    footer {
+      background: var(--dark-bg);
+      color: #ccc;
+      padding: 40px 0 18px;
+      font-size: 0.9rem;
+    }
+    footer h4 {
+      color: #fff;
+      font-family: 'Cinzel', serif;
+      margin-bottom: 16px;
+    }
+    footer a {
+      border-bottom: 1px dotted #666;
+    }
+    footer a:hover {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+    }
+    .footer-grid {
+      display: grid;
+      gap: 20px;
+    }
+    @media (min-width: 720px) {
+      .footer-grid {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+      }
+    }
+    .footer-bottom {
+      border-top: 1px solid #333;
+      margin-top: 26px;
+      padding-top: 14px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0 12px;
+        gap: 4px;
+      }
+      .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero-inner {
+        text-align: left;
+      }
+    }
+
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://aldeamagica.art/transparencia.html#webpage",
+        "url": "https://aldeamagica.art/transparencia.html",
+        "name": "Transparencia | La Aldea Mágica & La Casa del Duende",
+        "isPartOf": {
+          "@type": "WebSite",
+          "url": "https://aldeamagica.art/",
+          "name": "La Aldea Mágica"
+        },
+        "about": {
+          "@type": "TouristAttraction",
+          "@id": "https://aldeamagica.art/#attraction",
+          "name": "La Aldea Mágica"
+        },
+        "description": "Página de transparencia y documentación pública sobre la obra, la marca y las acciones de defensa simbólica de La Aldea Mágica y La Casa del Duende."
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="https://aldeamagica.art/" class="logo">La Aldea Mágica</a>
+      <ul class="menu">
+        <li><a href="https://aldeamagica.art/#experiencia">Experiencia</a></li>
+        <li><a href="https://aldeamagica.art/#filosofia">Filosofía</a></li>
+        <li><a href="https://aldeamagica.art/#visitar">Visitar</a></li>
+        <li><a href="https://lacasadelduende.art/">La Casa del Duende</a></li>
+        <li><a href="#inicio" aria-current="page">Transparencia</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="eyebrow">Documentación pública · Baños de Agua Santa</div>
+        <h1>Transparencia y registro de la obra</h1>
+        <p>
+          Esta página reúne los documentos, DOIs, enlaces y evidencias que respaldan la historia,
+          la autoría y la defensa simbólica de <strong>La Casa del Duende</strong> (desde 2013)
+          y <strong>La Aldea Mágica</strong> (desde 2018) en Baños de Agua Santa, Ecuador.
+        </p>
+        <div class="hero-note">
+          Aquí no se pide “creer”: se ofrecen <strong>fechas, documentos y huellas verificables</strong>
+          para que periodistas, investigadores y visitantes puedan contrastar la información por sí mismos.
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. REGISTRO DOCUMENTAL -->
+    <section class="reveal" id="registro">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>1. Registro documental y DOIs</h2>
+          <p>
+            Una parte central de nuestra defensa simbólica es publicar el conflicto y la historia
+            en repositorios académicos y de preservación digital de acceso abierto.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <span class="tag">Cease & desist · evidencia</span>
+            <h3>Solicitud de cese y registro de evidencia</h3>
+            <p>
+              Documento que reúne evidencia primaria (imágenes, video, capturas y checksums)
+              sobre el proyecto turístico que consideramos imitativo y desleal en Baños de Agua Santa.
+            </p>
+            <ul class="links">
+              <li>
+                <span class="label">DOI:</span>
+                <a href="https://doi.org/10.5281/zenodo.17021534" target="_blank" rel="noopener">
+                  10.5281/zenodo.17021534
+                </a>
+              </li>
+              <li>
+                <span class="label">Registro:</span>
+                <a href="https://zenodo.org/records/17021534" target="_blank" rel="noopener">
+                  Zenodo – Registro público de evidencia y solicitud de cese
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="tag">Ensayo académico</span>
+            <h3>«Duende de Baños: ¿Obra Protegible o Abstracta?»</h3>
+            <p>
+              Análisis sobre la figura del duende de Baños como obra, símbolo y fenómeno turístico,
+              y sobre los límites entre la inspiración y la apropiación comercial.
+            </p>
+            <ul class="links">
+              <li>
+                <span class="label">DOI:</span>
+                <a href="https://doi.org/10.5281/zenodo.17268348" target="_blank" rel="noopener">
+                  10.5281/zenodo.17268348
+                </a>
+              </li>
+              <li>
+                <span class="label">Serie:</span>
+                Archivo de Defensa Cultural Independiente
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top:22px;">
+          <div class="card">
+            <span class="tag">Marca & obra</span>
+            <h3>Registros de marca y otros depósitos</h3>
+            <ul class="links">
+              <li>
+                <span class="label">Marca “La Casa del Duende”:</span>
+                <a href="https://zenodo.org/record/15733877" target="_blank" rel="noopener">
+                  Registro oficial (Zenodo)
+                </a>
+              </li>
+              <li>
+                <span class="label">Publicación académica OSF:</span>
+                <a href="https://osf.io/smvg6/" target="_blank" rel="noopener">
+                  OSF – Publicación sobre duendes y fenómeno turístico en Baños
+                </a>
+              </li>
+              <li>
+                <span class="label">Más documentos:</span>
+                Se encuentran enlazados y actualizados desde
+                <a href="https://lacasadelduende.art/" target="_blank" rel="noopener">lacasadelduende.art</a>
+                y en perfiles de autor como Zenodo y Academia.edu.
+              </li>
+            </ul>
+            <small>
+              <strong>Autores:</strong> Fito Girolami & Catalina Lucz-Ligeti · Licencia general:
+              CC BY-NC-ND 4.0 (salvo indicación en contrario).
+            </small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. COMPETENCIA DESLEAL / CONTEXTO -->
+    <section class="reveal" id="competencia">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>2. Competencia desleal y desinformación</h2>
+          <p>
+            No buscamos destruir a nadie, pero sí dejar por escrito aquello que hemos documentado:
+            omisiones sistemáticas, uso del concepto de duende sin reconocimiento de origen
+            y prácticas que consideramos contrarias a un turismo ético.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <h3>¿Qué entendemos por competencia desleal?</h3>
+            <p>
+              En Baños de Agua Santa, luego de la creación de <strong>La Casa del Duende</strong> (2013)
+              y <strong>La Aldea Mágica</strong> (2018), surgieron proyectos que adoptaron la estética
+              y el imaginario del duende como gancho turístico, sin reconocer el proceso artístico
+              y simbólico que lo originó.
+            </p>
+            <p>
+              Lo problemático no es que existan otros proyectos, sino:
+            </p>
+            <ul>
+              <li>Que se presenten como “origen” o “inventores” de algo que ya tenía historia.</li>
+              <li>Que se utilicen puntos de información para omitir, desviar o desacreditar nuestra obra.</li>
+              <li>Que se apropie el lenguaje de la “magia” para vender espectáculos vacíos, sin vínculo real con el símbolo.</li>
+            </ul>
+            <p>
+              Por eso elegimos trabajar con <strong>registro abierto</strong>: lo que afirmamos está respaldado
+              en documentos que cualquiera puede leer.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>¿Dónde ver la evidencia?</h3>
+            <p>La evidencia no se resume en chismes ni en posts de redes, sino en:</p>
+            <ul class="links">
+              <li>📄 Oficios y comunicaciones presentadas ante el GAD Municipal de Baños (números de ingreso, fechas y anexos).</li>
+              <li>🖼️ Capturas de publicidad, señalética y guiones que replican o distorsionan nuestro trabajo.</li>
+              <li>🎥 Registros audiovisuales del trato en puntos de información y del desvío de turistas.</li>
+            </ul>
+            <div class="highlight">
+              <p>
+                Una parte de este material se encuentra en el
+                <strong>Registro público de evidencia y solicitud de cese</strong>
+                (DOI <a href="https://doi.org/10.5281/zenodo.17021534" target="_blank" rel="noopener">10.5281/zenodo.17021534</a>).
+                El resto se irá sumando en nuevos depósitos, manteniendo siempre un criterio:
+                <em>lo que se diga sobre otros debe poder demostrarse</em>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. AUDIO GUÍA SIMBÓLICA / PATENTE EN TRÁMITE -->
+    <section class="reveal" id="audio-guia">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>3. Audio guía simbólica · Patente en trámite</h2>
+          <p>
+            La experiencia de audio guía en La Aldea Mágica forma parte de un sistema editorial y tecnológico
+            diseñado específicamente para este jardín-obra. No es una app genérica ni un audioguía estándar.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <span class="tag">Método · diseño de interacción</span>
+            <h3>¿Qué se está protegiendo?</h3>
+            <p>
+              Cuando hablamos de <strong>“patente en trámite”</strong> nos referimos al
+              <em>método</em> y al <em>diseño de interacción</em> que combinan:
+            </p>
+            <ul>
+              <li>Estaciones numeradas y rotuladas con un lenguaje simbólico específico.</li>
+              <li>Uso de códigos QR y enlaces directos sin recolección invasiva de datos.</li>
+              <li>Guiones de audio vinculados puntualmente a cada estación del recorrido.</li>
+              <li>Sistema de verificación de archivos de audio mediante <strong>checksums (SHA-256)</strong>.</li>
+            </ul>
+            <p>
+              Todo esto se encuentra documentado en informes técnicos y depósitos digitales de acceso abierto,
+              con fechas que prueban la anterioridad del diseño frente a eventuales imitaciones.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="tag">Verificación</span>
+            <h3>Checksums y archivos de referencia</h3>
+            <p>
+              Para evitar la manipulación de archivos y garantizar trazabilidad, publicamos los
+              <strong>hashes SHA-256</strong> de cada pista de audio en documentos de referencia.
+            </p>
+            <p>Ejemplo ilustrativo (reemplazar por el hash real en la versión final):</p>
+            <p><code>Estación 1 · SHA-256: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code></p>
+            <p>
+              Esto permite que, en caso de disputa, se pueda probar que los audios originales estaban
+              depositados y publicados antes de cualquier intento de copia literal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CÓMO CITAR Y CÓMO CONTACTAR -->
+    <section class="reveal" id="citar">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>4. Cómo citar la obra y cómo contactarnos</h2>
+          <p>
+            No buscamos monopolizar la figura del duende: buscamos que se respete el trabajo que se hizo
+            desde 2013 y que, si se lo toma como referencia, se lo cite con honestidad.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Cita sugerida (formato general)</h3>
+            <p>Para trabajos académicos y de prensa, sugerimos citar de forma similar a:</p>
+            <p style="font-size:0.95rem;">
+              <em>
+                Girolami, F. & Lucz-Ligeti, C. (2013–2025).<br/>
+                La Casa del Duende & La Aldea Mágica: jardín-obra de duendes en Baños de Agua Santa, Ecuador.
+                Proyecto artístico y archivo de defensa cultural independiente.
+              </em>
+            </p>
+            <p style="font-size:0.92rem;">
+              Y, cuando corresponda, incluir los DOIs de los documentos consultados (por ejemplo,
+              <a href="https://doi.org/10.5281/zenodo.17021534" target="_blank" rel="noopener">10.5281/zenodo.17021534</a>).
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Contacto para prensa e investigación</h3>
+            <p>
+              Si estás preparando una nota, un informe o una investigación y querés contrastar datos,
+              podemos compartirte líneas de tiempo, documentos y contexto adicional.
+            </p>
+            <ul class="links">
+              <li><span class="label">Correo:</span> <a href="mailto:hola@aldeamagica.art">hola@aldeamagica.art</a></li>
+              <li><span class="label">Sitio:</span> <a href="https://lacasadelduende.art/" target="_blank" rel="noopener">lacasadelduende.art</a></li>
+              <li><span class="label">Instagram:</span> <a href="https://instagram.com/aldea.magica" target="_blank" rel="noopener">@aldea.magica</a></li>
+            </ul>
+            <p style="font-size:0.9rem;">
+              Agradecemos especialmente a quienes se toman el tiempo de <strong>verificar</strong> antes de repetir
+              relatos simplificados sobre “la fiebre de los duendes” en Baños.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CIERRE -->
+    <section class="reveal" id="cierre">
+      <div class="wrap">
+        <div class="card">
+          <h3>Por qué elegimos la transparencia</h3>
+          <p>
+            La Casa del Duende y La Aldea Mágica nacen de la ternura, la picardía y el asombro.
+            Pero también nacen de una decisión ética: <strong>no construir magia a costa de otros</strong>.
+          </p>
+          <p>
+            Esta página existe porque creemos que el turismo y la cultura en Baños de Agua Santa pueden
+            crecer sin borrar lo que vino antes, y sin disfrazar de “magia” lo que en realidad es marketing
+            sin memoria.
+          </p>
+          <p>
+            Si llegaste hasta aquí, gracias por leer. Lo que hagas con esta información también forma parte
+            de la historia que se está escribiendo.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h4>La Aldea Mágica</h4>
+          <p>Baños de Agua Santa, Ecuador.<br>Fundada en 2018.</p>
+        </div>
+        <div>
+          <h4>Proyecto ampliado</h4>
+          <p><a href="https://lacasadelduende.art/" target="_blank" rel="noopener">La Casa del Duende (desde 2013)</a></p>
+          <p><a href="https://instagram.com/aldea.magica" target="_blank" rel="noopener">Instagram @aldea.magica</a></p>
+        </div>
+        <div>
+          <h4>Licencias</h4>
+          <p>
+            Contenidos e imágenes bajo
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" target="_blank" rel="noopener">
+              CC BY-NC-ND 4.0
+            </a>,
+            salvo indicación expresa.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Fito Girolami & Catalina Lucz-Ligeti. Archivo de Defensa Cultural Independiente.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Animación al hacer scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
