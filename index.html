@@ -13,7 +13,7 @@
 
   <meta property="og:title" content="La Aldea Mágica | El jardín de duendes que transformó Baños de Agua Santa" />
   <meta property="og:description" content="Vení a descubrir el jardín de duendes original de Baños de Agua Santa. Filosofía invisible, arte vivo y naturaleza, lejos de las copias y del turismo de espectáculo." />
-  <meta property="og:image" content="https://aldeamagica.art/imagenes/Aldea%20Banner.jpg" />
+  <meta property="og:image" content="https://aldeamagica.art/imagenes/aldea%20baner.jpg" />
   <meta property="og:url" content="https://aldeamagica.art/" />
   <meta property="og:type" content="website" />
 
@@ -92,65 +92,63 @@
     .btn.outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); box-shadow: none; }
     .btn.outline:hover { background: var(--primary); color: #fff; }
 
-    /* Hero Section Parallax */
+    /* HERO: bloque oscuro + banner debajo */
     .hero {
-      position: relative;
-      height: 100vh;
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      overflow: hidden;
-      padding-top: 70px; /* compensa el header fijo */
-      box-sizing: border-box;
+      padding-top: 100px; /* compensa header fijo */
+      padding-bottom: 40px;
     }
-    .hero-bg {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: url('/imagenes/Aldea%20Banner.jpg') center/cover no-repeat;
-      z-index: -2;
-      filter: brightness(0.6);
-      background-attachment: fixed; /* Parallax simple */
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 20% 0%, rgba(0,0,0,0.6), transparent 55%),
-                  linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
-      z-index: -1;
-    }
-
-    .hero-content {
+    .hero-inner {
+      max-width: 960px;
+      margin: 0 auto;
       text-align: center;
-      max-width: 860px;
-      padding: 20px;
-      animation: fadeInUP 1.2s ease-out;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
-    .hero h1 {
-      font-size: clamp(2.6rem, 5vw, 4.6rem);
-      color: #fff;
-      margin-bottom: 10px;
-      text-shadow: 0 4px 10px rgba(0,0,0,0.6);
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 28px;
-      opacity: 0.94;
-      font-weight: 300;
+    .hero-card {
+      background: radial-gradient(circle at 0% 0%, rgba(212,175,55,0.15), transparent 55%),
+                  #111;
+      color: #f7f2dc;
+      border-radius: 20px;
+      padding: 28px 22px 30px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
     }
     .hero-tagline {
       font-size: 0.95rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: #f0e6c8;
     }
-    
+    .hero-card h1 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      color: #fff;
+      margin: 6px 0 10px;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+    }
+    .hero-card p {
+      font-size: 1.05rem;
+      margin: 0 0 20px;
+      opacity: 0.95;
+      font-weight: 300;
+    }
+    .hero-buttons {
+      margin-top: 10px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .hero-banner {
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.28);
+    }
+    .hero-banner img {
+      width: 100%;
+      display:block;
+    }
+
     /* Secciones Generales */
     section { padding: 80px 0; }
     .section-header { text-align: center; margin-bottom: 50px; }
@@ -241,8 +239,8 @@
       .menu { gap: 15px; margin-top: 10px; flex-wrap: wrap; justify-content: center; }
       .grid-2 { grid-template-columns: 1fr; }
       .gallery-masonry { column-count: 1; }
-      .hero h1 { font-size: 2.3rem; }
-      .hero { height: 90vh; padding-top: 80px; }
+      .hero-card h1 { font-size: 2rem; }
+      .hero { padding-top: 90px; }
     }
 
     /* Animaciones Scroll */
@@ -279,7 +277,7 @@
           "addressRegion": "Tungurahua",
           "addressCountry": "EC"
         },
-        "image": "https://aldeamagica.art/imagenes/Aldea%20Banner.jpg",
+        "image": "https://aldeamagica.art/imagenes/aldea%20baner.jpg",
         "openingHoursSpecification": [
           {
             "@type":"OpeningHoursSpecification",
@@ -317,19 +315,23 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <div class="hero-tagline">Jardín de duendes original · Baños de Agua Santa</div>
-        <h1>Vení a descubrir los duendes que transformaron Baños</h1>
-        <p>
-          La Aldea Mágica no es un parque temático: es un jardín vivo donde habitan los duendes
-          que dieron origen al mito moderno de Baños de Agua Santa. Arte, silencio y señales
-          para quienes todavía saben mirar.
-        </p>
-        <div style="margin-top:22px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+      <div class="hero-inner">
+        <div class="hero-card">
+          <div class="hero-tagline">Jardín de duendes original · Baños de Agua Santa</div>
+          <h1>Vení a descubrir los duendes que transformaron Baños</h1>
+          <p>
+            La Aldea Mágica no es un parque temático: es un jardín vivo donde habitan los duendes
+            que dieron origen al mito moderno de Baños de Agua Santa. Arte, silencio y señales
+            para quienes todavía saben mirar.
+          </p>
+          <div class="hero-buttons">
             <a href="#visitar" class="btn">Quiero visitarla</a>
-            <a href="https://instagram.com/lacasadelduende_ec" target="_blank" class="btn outline" style="border-color:#fff; color:#fff">Ver adelantos en Instagram</a>
+            <a href="https://instagram.com/lacasadelduende_ec" target="_blank" class="btn outline">Ver adelantos en Instagram</a>
+          </div>
+        </div>
+
+        <div class="hero-banner">
+          <img src="/imagenes/aldea%20baner.jpg" alt="Vista de La Aldea Mágica en Baños de Agua Santa">
         </div>
       </div>
     </section>
@@ -576,4 +578,3 @@
 
 </body>
 </html>
-
