@@ -4,17 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>La Aldea Mágica | El Jardín de Duendes Original en Baños de Agua Santa</title>
-  <meta name="description" content="¿Buscas qué hacer en Baños de Agua Santa? Vení a descubrir La Aldea Mágica: el jardín de duendes original que transformó la ciudad. Obra viva, filosofía invisible y naturaleza en silencio, lejos de las copias comerciales." />
+  <title>Transparencia | La Aldea Mágica & La Casa del Duende</title>
+  <meta name="description" content="Documentación pública, DOIs, evidencias y cronología del trabajo de La Aldea Mágica y La Casa del Duende en Baños de Agua Santa, Ecuador. Registro de obra, marca, competencia desleal y sistema de audio guía simbólica (patente en trámite)." />
   <meta name="author" content="Fito Girolami, Catalina Lucz-Ligeti" />
-  <meta name="keywords" content="qué hacer en Baños, duendes Baños Ecuador, La Aldea Mágica, arte en baños, Fito Girolami, turismo cultural, filosofía invisible, competencia desleal Baños" />
-  <link rel="canonical" href="https://aldeamagica.art/" />
+  <link rel="canonical" href="https://aldeamagica.art/transparencia.html" />
   <meta name="robots" content="index,follow"/>
 
-  <meta property="og:title" content="La Aldea Mágica | El jardín de duendes que transformó Baños de Agua Santa" />
-  <meta property="og:description" content="Vení a descubrir el jardín de duendes original de Baños de Agua Santa. Filosofía invisible, arte vivo y naturaleza, lejos de las copias y del turismo de espectáculo." />
+  <meta property="og:title" content="Transparencia | La Aldea Mágica & La Casa del Duende" />
+  <meta property="og:description" content="Acceso abierto a documentos, DOIs y evidencias que respaldan la historia y la defensa simbólica de La Aldea Mágica y La Casa del Duende." />
   <meta property="og:image" content="https://aldeamagica.art/imagenes/AldeaBanner.jpg" />
-  <meta property="og:url" content="https://aldeamagica.art/" />
+  <meta property="og:url" content="https://aldeamagica.art/transparencia.html" />
   <meta property="og:type" content="website" />
 
   <link rel="icon" href="/imagenes/favicon.png" />
@@ -25,18 +24,17 @@
 
   <style>
     :root {
-      /* Paleta de colores "Bosque Místico" */
       --bg: #fdfbf7;
       --text: #2c2c2c;
-      --primary: #2f4f4f; /* Dark Slate Gray */
-      --accent: #d4af37;  /* Gold */
-      --dark-bg: #1a1a1a;
+      --primary: #2f4f4f;
+      --accent: #d4af37;
+      --dark-bg: #111111;
       --light-gray: #f4f4f4;
+      --line: #e3dfd5;
       --radius: 12px;
       --shadow: 0 10px 30px -10px rgba(0,0,0,0.15);
     }
 
-    /* Base */
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
@@ -47,207 +45,253 @@
       overflow-x: hidden;
     }
 
-    h1, h2, h3, .logo {
-      font-family: 'Cinzel', serif; /* Fuente con personalidad */
+    h1, h2, h3, h4, .logo {
+      font-family: 'Cinzel', serif;
       font-weight: 700;
       color: var(--primary);
     }
 
     img { max-width: 100%; height: auto; display: block; border-radius: var(--radius); }
-    a { text-decoration: none; color: inherit; transition: 0.3s; }
-    
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-    
-    /* Header Transparente/Blur */
+    a { text-decoration: none; color: inherit; transition: 0.25s; }
+    a:hover { color: var(--accent); }
+
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
     header {
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 100;
-      background: rgba(253, 251, 247, 0.88);
+      background: rgba(253, 251, 247, 0.94);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(0,0,0,0.05);
-      transition: all 0.3s ease;
     }
-    .nav { display: flex; justify-content: space-between; align-items: center; height: 70px; }
-    .logo { font-size: 1.4rem; letter-spacing: 1px; color: var(--dark-bg); }
-    .menu { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
-    .menu a { font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.8; }
-    .menu a:hover { color: var(--accent); opacity: 1; }
-    
-    /* Botones */
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background: var(--primary);
-      color: #fff;
-      border-radius: 50px;
-      font-weight: 700;
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+    .logo {
+      font-size: 1.2rem;
       letter-spacing: 1px;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      box-shadow: 0 4px 15px rgba(47, 79, 79, 0.3);
+      color: var(--dark-bg);
     }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(47, 79, 79, 0.4); background: var(--dark-bg); }
-    .btn.outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); box-shadow: none; }
-    .btn.outline:hover { background: var(--primary); color: #fff; }
+    .menu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .menu a {
+      opacity: 0.8;
+      padding: 6px 8px;
+      border-radius: 999px;
+    }
+    .menu a:hover,
+    .menu a[aria-current="page"] {
+      opacity: 1;
+      background: rgba(0,0,0,0.04);
+    }
 
-    /* HERO: bloque oscuro + banner debajo */
+    /* Hero */
     .hero {
-      padding-top: 100px; /* compensa header fijo */
+      padding-top: 100px;
       padding-bottom: 40px;
+      border-bottom: 1px solid var(--line);
+      background: radial-gradient(circle at 0% 0%, rgba(212,175,55,0.12), transparent 55%);
     }
     .hero-inner {
-      max-width: 960px;
+      max-width: 900px;
       margin: 0 auto;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
+      text-align: left;
     }
-    .hero-card {
-      background: radial-gradient(circle at 0% 0%, rgba(212,175,55,0.15), transparent 55%),
-                  #111;
-      color: #f7f2dc;
-      border-radius: 20px;
-      padding: 28px 22px 30px;
-      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
-    }
-    .hero-tagline {
-      font-size: 0.95rem;
-      letter-spacing: 2px;
+    .eyebrow {
       text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      color: #6f6350;
       margin-bottom: 8px;
-      color: #f0e6c8;
     }
-    .hero-card h1 {
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
-      color: #fff;
-      margin: 6px 0 10px;
-      text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+    .hero h1 {
+      font-size: clamp(2.1rem, 3.2vw, 2.7rem);
+      margin: 6px 0 12px;
     }
-    .hero-card p {
-      font-size: 1.05rem;
-      margin: 0 0 20px;
-      opacity: 0.95;
-      font-weight: 300;
+    .hero p {
+      font-size: 1.02rem;
+      color: #555;
+      max-width: 720px;
     }
-    .hero-buttons {
-      margin-top: 10px;
-      display:flex;
-      gap:12px;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
-    .hero-banner {
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 16px 40px rgba(0,0,0,0.28);
-    }
-    .hero-banner img {
-      width: 100%;
-      display:block;
+    .hero-note {
+      margin-top: 12px;
+      padding: 10px 14px;
+      border-left: 3px solid var(--accent);
+      background: rgba(0,0,0,0.02);
+      font-size: 0.92rem;
+      color: #555;
     }
 
-    /* Secciones Generales */
-    section { padding: 80px 0; }
-    .section-header { text-align: center; margin-bottom: 50px; }
-    .section-header h2 { font-size: 2.5rem; margin-bottom: 16px; position: relative; display: inline-block; }
-    .section-header h2::after {
-      content: ''; display: block; width: 60px; height: 3px; background: var(--accent);
-      margin: 10px auto 0;
+    /* Sections */
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid var(--line);
     }
-    .section-header p { max-width: 700px; margin: 0 auto; color: #666; font-size: 1.05rem; }
+    .section-header {
+      margin-bottom: 24px;
+    }
+    .section-header h2 {
+      font-size: 1.7rem;
+      margin: 0 0 6px;
+    }
+    .section-header p {
+      margin: 0;
+      color: #666;
+      max-width: 700px;
+    }
 
-    /* Grid Layouts */
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    /* Cards / bloques */
+    .grid {
+      display: grid;
+      gap: 22px;
+    }
+    @media (min-width: 860px) {
+      .grid-2 {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: flex-start;
+      }
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+      }
+    }
 
-    /* Tarjetas de Experiencia */
-    .feature-card {
+    .card {
       background: #fff;
-      padding: 30px;
       border-radius: var(--radius);
+      border: 1px solid var(--line);
       box-shadow: var(--shadow);
-      transition: transform 0.3s;
-      border-top: 4px solid var(--accent);
+      padding: 22px 20px;
     }
-    .feature-card:hover { transform: translateY(-5px); }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .card small {
+      font-size: 0.8rem;
+      color: #777;
+    }
 
-    /* Sección Filosofía Invisible */
-    .filosofia {
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    ul.links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.links li {
+      padding: 6px 0;
+      border-bottom: 1px dashed #e0dbd0;
+      font-size: 0.96rem;
+    }
+    ul.links li:last-child {
+      border-bottom: none;
+    }
+    ul.links span.label {
+      font-weight: 600;
+      color: #444;
+    }
+
+    code {
+      font-size: 0.8rem;
+      background: #f3efe7;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    .highlight {
       background: #111;
       color: #eee;
-      position: relative;
-      overflow: hidden;
+      border-radius: 14px;
+      padding: 20px 18px;
+      margin-top: 10px;
     }
-    .filosofia::before {
-      content:"";
-      position:absolute;
-      inset:0;
-      background: radial-gradient(circle at 10% 0%, rgba(212,175,55,0.16), transparent 55%),
-                  radial-gradient(circle at 90% 100%, rgba(255,255,255,0.06), transparent 60%);
-      opacity: 0.9;
+    .highlight p {
+      margin: 0;
+      color: #e4ded1;
+      font-size: 0.95rem;
     }
-    .filosofia-inner {
-      position: relative;
-      z-index: 1;
-    }
-    .filosofia h2 {
-      color: #f7f2dc;
-    }
-    .filosofia p {
-      color: #d3d3d3;
-    }
-    .filosofia blockquote {
-      font-family: 'Cinzel', serif;
-      font-size: 1.4rem;
-      color: #f5e6b7;
-      border-left: 4px solid var(--accent);
-      padding-left: 20px;
-      margin: 24px 0;
-    }
-
-    /* Galería Masonry (Estilo Mosaico Artístico) */
-    .gallery-masonry {
-      column-count: 3;
-      column-gap: 20px;
-    }
-    .gallery-item {
-      break-inside: avoid;
-      margin-bottom: 20px;
-      position: relative;
-      overflow: hidden;
-      border-radius: var(--radius);
-    }
-    .gallery-item img {
-      width: 100%;
-      transition: transform 0.5s ease;
-    }
-    .gallery-item:hover img { transform: scale(1.05); }
 
     /* Footer */
-    footer { background: var(--dark-bg); color: #ccc; padding: 60px 0 20px; font-size: 0.9rem; }
-    footer h4 { color: #fff; font-family: 'Cinzel', serif; margin-bottom: 20px; }
-    footer a { border-bottom: 1px dotted #666; }
-    footer a:hover { color: var(--accent); border-bottom: 1px solid var(--accent); }
-    .footer-bottom { border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 0.8rem; }
+    footer {
+      background: var(--dark-bg);
+      color: #ccc;
+      padding: 40px 0 18px;
+      font-size: 0.9rem;
+    }
+    footer h4 {
+      color: #fff;
+      font-family: 'Cinzel', serif;
+      margin-bottom: 16px;
+    }
+    footer a {
+      border-bottom: 1px dotted #666;
+    }
+    footer a:hover {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+    }
+    .footer-grid {
+      display: grid;
+      gap: 20px;
+    }
+    @media (min-width: 720px) {
+      .footer-grid {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+      }
+    }
+    .footer-bottom {
+      border-top: 1px solid #333;
+      margin-top: 26px;
+      padding-top: 14px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
 
     /* Responsive */
     @media (max-width: 768px) {
-      .nav { flex-direction: column; height: auto; padding: 15px 0; }
-      .menu { gap: 15px; margin-top: 10px; flex-wrap: wrap; justify-content: center; }
-      .grid-2 { grid-template-columns: 1fr; }
-      .gallery-masonry { column-count: 1; }
-      .hero-card h1 { font-size: 2rem; }
-      .hero { padding-top: 90px; }
+      .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0 12px;
+        gap: 4px;
+      }
+      .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero-inner {
+        text-align: left;
+      }
     }
 
-    /* Animaciones Scroll */
-    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
     .reveal.active { opacity: 1; transform: translateY(0); }
-    @keyframes fadeInUP { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
   </style>
 
   <script type="application/ld+json">
@@ -255,42 +299,21 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "TouristAttraction",
-        "@id": "https://aldeamagica.art/#attraction",
-        "name": "La Aldea Mágica",
-        "description": "El jardín-obra vivo de duendes original en Baños de Agua Santa. Experiencia artística y simbólica que forma parte del mito moderno de los duendes creado por Fito Girolami y Catalina Lucz-Ligeti.",
-        "url": "https://aldeamagica.art/",
-        "founder": [
-          {
-            "@type": "Person",
-            "name": "Fito Girolami",
-            "sameAs": "https://fitogirolami.art/"
-          },
-          {
-            "@type": "Person",
-            "name": "Catalina Lucz-Ligeti"
-          }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Baños de Agua Santa",
-          "addressRegion": "Tungurahua",
-          "addressCountry": "EC"
+        "@type": "WebPage",
+        "@id": "https://aldeamagica.art/transparencia.html#webpage",
+        "url": "https://aldeamagica.art/transparencia.html",
+        "name": "Transparencia | La Aldea Mágica & La Casa del Duende",
+        "isPartOf": {
+          "@type": "WebSite",
+          "url": "https://aldeamagica.art/",
+          "name": "La Aldea Mágica"
         },
-        "image": "https://aldeamagica.art/imagenes/AldeaBanner.jpg",
-        "openingHoursSpecification": [
-          {
-            "@type":"OpeningHoursSpecification",
-            "dayOfWeek":["Saturday","Sunday"],
-            "opens":"10:00",
-            "closes":"18:00"
-          }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "name": "La Aldea Mágica",
-        "url": "https://aldeamagica.art/"
+        "about": {
+          "@type": "TouristAttraction",
+          "@id": "https://aldeamagica.art/#attraction",
+          "name": "La Aldea Mágica"
+        },
+        "description": "Página de transparencia y documentación pública sobre la obra, la marca y las acciones de defensa simbólica de La Aldea Mágica y La Casa del Duende."
       }
     ]
   }
@@ -298,269 +321,330 @@
 </head>
 
 <body>
-
   <header>
     <div class="wrap nav">
-      <a href="#" class="logo">La Aldea Mágica</a>
+      <a href="https://aldeamagica.art/" class="logo">La Aldea Mágica</a>
       <ul class="menu">
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#filosofia">Filosofía invisible</a></li>
-        <li><a href="#rincones">Rincones</a></li>
-        <li><a href="#visitar">Visitar</a></li>
-        <li><a href="#faq">Dudas</a></li>
+        <li><a href="https://aldeamagica.art/#experiencia">Experiencia</a></li>
+        <li><a href="https://aldeamagica.art/#filosofia">Filosofía</a></li>
+        <li><a href="https://aldeamagica.art/#visitar">Visitar</a></li>
+        <li><a href="https://lacasadelduende.art/">La Casa del Duende</a></li>
+        <li><a href="#inicio" aria-current="page">Transparencia</a></li>
       </ul>
     </div>
   </header>
 
-  <main>
+  <main id="inicio">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-card">
-          <div class="hero-tagline">Jardín de duendes original · Baños de Agua Santa</div>
-          <h1>Vení a descubrir los duendes que transformaron Baños</h1>
-          <p>
-            La Aldea Mágica no es un parque temático: es un jardín vivo donde habitan los duendes
-            que dieron origen al mito moderno de Baños de Agua Santa. Arte, silencio y señales
-            para quienes todavía saben mirar.
-          </p>
-          <div class="hero-buttons">
-            <a href="#visitar" class="btn">Quiero visitarla</a>
-            <a href="https://instagram.com/aldea.magica" target="_blank" class="btn outline">Ver adelantos en Instagram</a>
-          </div>
-        </div>
-
-        <div class="hero-banner">
-          <img src="/imagenes/AldeaBanner.jpg" alt="Vista de La Aldea Mágica en Baños de Agua Santa">
+      <div class="wrap hero-inner">
+        <div class="eyebrow">Documentación pública · Baños de Agua Santa</div>
+        <h1>Transparencia y registro de la obra</h1>
+        <p>
+          Esta página reúne los documentos, DOIs, enlaces y evidencias que respaldan la historia,
+          la autoría y la defensa simbólica de <strong>La Casa del Duende</strong> (desde 2013)
+          y <strong>La Aldea Mágica</strong> (desde 2018) en Baños de Agua Santa, Ecuador.
+        </p>
+        <div class="hero-note">
+          Aquí no se pide “creer”: se ofrecen <strong>fechas, documentos y huellas verificables</strong>
+          para que periodistas, investigadores y visitantes puedan contrastar la información por sí mismos.
         </div>
       </div>
     </section>
 
-    <!-- QUÉ HACER / EXPERIENCIA -->
-    <section id="experiencia" class="reveal">
+    <!-- 1. REGISTRO DOCUMENTAL -->
+    <section class="reveal" id="registro">
       <div class="wrap">
         <div class="section-header">
-          <h2>Qué hacer en Baños de Agua Santa</h2>
+          <h2>1. Registro documental y DOIs</h2>
           <p>
-            Entre tantas ofertas turísticas, aquí hay algo distinto: un jardín-obra de duendes que no se vende como espectáculo,
-            sino como experiencia íntima. Si buscas un lugar para recordar por qué Baños se volvió “tierra de duendes”, este es el origen.
-          </p>
-        </div>
-        
-        <div class="grid-3">
-          <div class="feature-card">
-            <h3>🎨 Arte vivo entre musgos</h3>
-            <p>No vas a encontrar muñecos de plástico industrial. Cada habitante de la Aldea es una escultura original, pensada para convivir con el musgo, la piedra y la madera.</p>
-          </div>
-          <div class="feature-card">
-            <h3>🌿 Tiempo lento, sin ruido</h3>
-            <p>El recorrido está diseñado para bajar el ritmo: sin parlantes estridentes ni guías apurados. Caminás a tu paso, escuchando lo que el jardín y tu imaginación tengan para decir.</p>
-          </div>
-          <div class="feature-card">
-            <h3>✨ Mito moderno, no superstición</h3>
-            <p>Aquí no vendemos amuletos ni “activaciones”. El duende es un símbolo de cuidado, picardía y presencia. La magia está en cómo mirás, no en lo que compras.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FILOSOFÍA INVISIBLE -->
-    <section id="filosofia" class="filosofia reveal">
-      <div class="wrap filosofia-inner">
-        <div class="section-header">
-          <h2>Filosofía Invisible</h2>
-          <p>
-            Detrás de cada figura hay algo que no se ve en las fotos: una forma de estar en el mundo.
-            La Aldea Mágica es parte de una investigación viva sobre el duende como símbolo y como
-            guardián de lo que no se deja capturar por el turismo rápido.
+            Una parte central de nuestra defensa simbólica es publicar el conflicto y la historia
+            en repositorios académicos y de preservación digital de acceso abierto.
           </p>
         </div>
 
-        <div class="grid-2">
-          <div>
-            <blockquote>
-              “El duende no es un muñequito: es la manera en que la Tierra te guiña un ojo para recordarte
-              que no todo está bajo control.”
-            </blockquote>
+        <div class="grid grid-2">
+          <div class="card">
+            <span class="tag">Cease & desist · evidencia</span>
+            <h3>Solicitud de cese y registro de evidencia</h3>
             <p>
-              A esto lo llamamos <strong>Filosofía Invisible</strong>: cuidar lo que no se ve pero se siente.
-              El silencio del jardín, el crujido de la madera vieja, la piedra que alguien puso ahí hace años
-              sin dejar su nombre. Todo eso es parte de la obra.
+              Documento que reúne evidencia primaria (imágenes, video, capturas y checksums)
+              sobre el proyecto turístico que consideramos imitativo y desleal en Baños de Agua Santa.
             </p>
-            <p>
-              Venir a la Aldea es aceptar una invitación sencilla: dejar por un rato el modo “foto para redes”
-              y entrar en modo escucha. A veces el duende se manifiesta en una risa compartida, en un recuerdo,
-              en una idea que aparece de golpe mientras caminás.
-            </p>
-            <p>
-              Si algo de esto te resuena, probablemente este lugar te estaba esperando hace tiempo.
-            </p>
+            <ul class="links">
+              <li>
+                <span class="label">DOI:</span>
+                <a href="https://doi.org/10.5281/zenodo.17021534" target="_blank" rel="noopener">
+                  10.5281/zenodo.17021534
+                </a>
+              </li>
+              <li>
+                <span class="label">Registro:</span>
+                <a href="https://zenodo.org/records/17021534" target="_blank" rel="noopener">
+                  Zenodo – Registro público de evidencia y solicitud de cese
+                </a>
+              </li>
+            </ul>
           </div>
-          <div>
-            <img src="/imagenes/aldea1.jpg" alt="Rincón simbólico en La Aldea Mágica" style="box-shadow: var(--shadow);">
+
+          <div class="card">
+            <span class="tag">Ensayo académico</span>
+            <h3>«Duende de Baños: ¿Obra Protegible o Abstracta?»</h3>
+            <p>
+              Análisis sobre la figura del duende de Baños como obra, símbolo y fenómeno turístico,
+              y sobre los límites entre la inspiración y la apropiación comercial.
+            </p>
+            <ul class="links">
+              <li>
+                <span class="label">DOI:</span>
+                <a href="https://doi.org/10.5281/zenodo.17268348" target="_blank" rel="noopener">
+                  10.5281/zenodo.17268348
+                </a>
+              </li>
+              <li>
+                <span class="label">Serie:</span>
+                Archivo de Defensa Cultural Independiente
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top:22px;">
+          <div class="card">
+            <span class="tag">Marca & obra</span>
+            <h3>Registros de marca y otros depósitos</h3>
+            <ul class="links">
+              <li>
+                <span class="label">Marca “La Casa del Duende”:</span>
+                <a href="https://zenodo.org/record/15733877" target="_blank" rel="noopener">
+                  Registro oficial (Zenodo)
+                </a>
+              </li>
+              <li>
+                <span class="label">Publicación académica OSF:</span>
+                <a href="https://osf.io/smvg6/" target="_blank" rel="noopener">
+                  OSF – Publicación sobre duendes y fenómeno turístico en Baños
+                </a>
+              </li>
+              <li>
+                <span class="label">Más documentos:</span>
+                Se encuentran enlazados y actualizados desde
+                <a href="https://lacasadelduende.art/" target="_blank" rel="noopener">lacasadelduende.art</a>
+                y en perfiles de autor como Zenodo y Academia.edu.
+              </li>
+            </ul>
+            <small>
+              <strong>Autores:</strong> Fito Girolami & Catalina Lucz-Ligeti · Licencia general:
+              CC BY-NC-ND 4.0 (salvo indicación en contrario).
+            </small>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- RINCONES / GALERÍA -->
-    <section id="rincones" class="reveal">
+    <!-- 2. COMPETENCIA DESLEAL / CONTEXTO -->
+    <section class="reveal" id="competencia">
       <div class="wrap">
         <div class="section-header">
-            <h2>Rincones de la Aldea</h2>
-            <p>Estas imágenes son apenas un anticipo. Lo importante no está en la foto, está en el momento en que estés ahí.</p>
+          <h2>2. Competencia desleal y desinformación</h2>
+          <p>
+            No buscamos destruir a nadie, pero sí dejar por escrito aquello que hemos documentado:
+            omisiones sistemáticas, uso del concepto de duende sin reconocimiento de origen
+            y prácticas que consideramos contrarias a un turismo ético.
+          </p>
         </div>
-        <div class="gallery-masonry">
-          <div class="gallery-item"><img src="/imagenes/aldea2.jpg" alt="Sendero mágico entre árboles y figuras" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea4.jpg" alt="Escultura de duende integrada al paisaje" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea5.jpg" alt="Detalle de naturaleza y símbolo" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea6.jpg" alt="Luces suaves al caer la tarde en el jardín" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea7.jpg" alt="Trabajo en madera y texturas antiguas" loading="lazy"></div>
-          <div class="gallery-item"><img src="/imagenes/aldea9.jpg" alt="Ambiente nocturno en la Aldea Mágica" loading="lazy"></div>
-        </div>
-      </div>
-    </section>
 
-    <!-- VISITAR -->
-    <section id="visitar" class="reveal" style="background:#fff">
-      <div class="wrap">
-        <div class="section-header">
-          <h2>Planeá tu visita</h2>
-          <p>La Aldea Mágica no se vende en folletos masivos. Te contamos directamente cómo llegar y cómo cuidarla.</p>
-        </div>
-        <div class="grid-2">
-            <div>
-                <p>Para preservar la tranquilidad del lugar y de la obra, trabajamos con horarios concretos y sin intermediarios.</p>
-                <ul style="list-style:none; padding:0; margin-top:30px;">
-                    <li style="margin-bottom:15px;"><strong>📅 Horarios:</strong> Sábados, domingos y feriados (11:00 - 22:00) Lunes, Martes,Miercoles,jueves,viernes (16:00 - 21:00). Consulta por visitas especiales entre semana.</li>
-                    <li style="margin-bottom:15px;"><strong>📍 Ubicación:</strong>Av Oriente mas abajo del coliseo municipal,a 5 minutos del centro. Sigue solo las indicaciones oficiales.</li>
-                    <li style="margin-bottom:15px;"><strong>🎟️ Entradas:</strong> Directamente en la puerta. No tenemos “enganchadores” en el centro ni vendedores en la calle.</li>
-                </ul>
-                <p>Si venís con grupo, familia o en modo introspectivo, el jardín se adapta: la clave es el respeto.</p>
-                <div style="margin-top:30px; display:flex; gap:10px; flex-wrap:wrap;">
-                    <a href="https://maps.app.goo.gl/ZgB4pPGMVxnt1gQy6" target="_blank" class="btn">Abrir en Google Maps</a>
-                    <a href="https://wa.me/" class="btn outline">Escribir por WhatsApp</a>
-                </div>
+        <div class="grid">
+          <div class="card">
+            <h3>¿Qué entendemos por competencia desleal?</h3>
+            <p>
+              En Baños de Agua Santa, luego de la creación de <strong>La Casa del Duende</strong> (2013)
+              y <strong>La Aldea Mágica</strong> (2018), surgieron proyectos que adoptaron la estética
+              y el imaginario del duende como gancho turístico, sin reconocer el proceso artístico
+              y simbólico que lo originó.
+            </p>
+            <p>
+              Lo problemático no es que existan otros proyectos, sino:
+            </p>
+            <ul>
+              <li>Que se presenten como “origen” o “inventores” de algo que ya tenía historia.</li>
+              <li>Que se utilicen puntos de información para omitir, desviar o desacreditar nuestra obra.</li>
+              <li>Que se apropie el lenguaje de la “magia” para vender espectáculos vacíos, sin vínculo real con el símbolo.</li>
+            </ul>
+            <p>
+              Por eso elegimos trabajar con <strong>registro abierto</strong>: lo que afirmamos está respaldado
+              en documentos que cualquiera puede leer.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>¿Dónde ver la evidencia?</h3>
+            <p>La evidencia no se resume en chismes ni en posts de redes, sino en:</p>
+            <ul class="links">
+              <li>📄 Oficios y comunicaciones presentadas ante el GAD Municipal de Baños (números de ingreso, fechas y anexos).</li>
+              <li>🖼️ Capturas de publicidad, señalética y guiones que replican o distorsionan nuestro trabajo.</li>
+              <li>🎥 Registros audiovisuales del trato en puntos de información y del desvío de turistas.</li>
+            </ul>
+            <div class="highlight">
+              <p>
+                Una parte de este material se encuentra en el
+                <strong>Registro público de evidencia y solicitud de cese</strong>
+                (DOI <a href="https://doi.org/10.5281/zenodo.17021534" target="_blank" rel="noopener">10.5281/zenodo.17021534</a>).
+                El resto se irá sumando en nuevos depósitos, manteniendo siempre un criterio:
+                <em>lo que se diga sobre otros debe poder demostrarse</em>.
+              </p>
             </div>
-            <div>
-              <!-- Mapa embebido: puedes reemplazar el src por el iframe que te dé Google Maps en "Compartir > Insertar un mapa" -->
-              <iframe
-                title="Mapa de La Aldea Mágica"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.0000000000005!2d-78.42000000000002!3d-1.3920000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLa%20Aldea%20M%C3%A1gica!5e0!3m2!1ses-419!2sec!4v1700000000000"
-                width="100%"
-                height="350"
-                style="border:0; border-radius: var(--radius); filter: grayscale(20%);"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ / DUDAS -->
-    <section id="faq" class="reveal" style="padding-top:20px; padding-bottom:60px;">
-      <div class="wrap" style="max-width:900px;">
+    <!-- 3. AUDIO GUÍA SIMBÓLICA / PATENTE EN TRÁMITE -->
+    <section class="reveal" id="audio-guia">
+      <div class="wrap">
         <div class="section-header">
-            <h3>Dudas antes de venir</h3>
-            <p>Algunas preguntas que suelen hacernos quienes buscan algo distinto a lo turístico de siempre.</p>
+          <h2>3. Audio guía simbólica · Patente en trámite</h2>
+          <p>
+            La experiencia de audio guía en La Aldea Mágica forma parte de un sistema editorial y tecnológico
+            diseñado específicamente para este jardín-obra. No es una app genérica ni un audioguía estándar.
+          </p>
         </div>
 
-        <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
-          <summary style="font-weight:bold; cursor:pointer;">¿Por qué en puntos de información a veces no nos hablan de La Aldea Mágica?</summary>
-          <p style="margin-top:10px; font-size:0.95rem;">
-            La Aldea Mágica es un proyecto independiente, creado por artistas que viven y trabajan aquí.
-            No formamos parte de paquetes ni de circuitos armados por agencias, y eso a veces incomoda a
-            quienes dependen de comisiones y acuerdos comerciales.
-          </p>
-          <p style="margin-top:10px; font-size:0.95rem;">
-            Hemos documentado situaciones que consideramos <strong>competencia desleal</strong>: omisiones,
-            desinformación o desvío intencional hacia espacios que imitan la estética del duende pero no
-            reconocen su origen. Toda esa evidencia está publicada en nuestra sección de
-            <a href="/transparencia.html">transparencia</a>, para que cualquiera pueda revisarla.
-          </p>
-          <p style="margin-top:10px; font-size:0.95rem;">
-            Por eso, si en un punto de información no te mencionan La Aldea Mágica o hablan mal de nuestro
-            trabajo, te invitamos a hacer algo simple: <strong>vení, recorre, y sacá tus propias conclusiones</strong>.
-          </p>
-        </details>
+        <div class="grid grid-2">
+          <div class="card">
+            <span class="tag">Método · diseño de interacción</span>
+            <h3>¿Qué se está protegiendo?</h3>
+            <p>
+              Cuando hablamos de <strong>“patente en trámite”</strong> nos referimos al
+              <em>método</em> y al <em>diseño de interacción</em> que combinan:
+            </p>
+            <ul>
+              <li>Estaciones numeradas y rotuladas con un lenguaje simbólico específico.</li>
+              <li>Uso de códigos QR y enlaces directos sin recolección invasiva de datos.</li>
+              <li>Guiones de audio vinculados puntualmente a cada estación del recorrido.</li>
+              <li>Sistema de verificación de archivos de audio mediante <strong>checksums (SHA-256)</strong>.</li>
+            </ul>
+            <p>
+              Todo esto se encuentra documentado en informes técnicos y depósitos digitales de acceso abierto,
+              con fechas que prueban la anterioridad del diseño frente a eventuales imitaciones.
+            </p>
+          </div>
 
-        <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
-            <summary style="font-weight:bold; cursor:pointer;">¿Es apto para niños?</summary>
-            <p style="margin-top:10px; font-size:0.95rem;">
-              Sí, claro. Muchos niños sienten afinidad inmediata con los duendes y con el jardín.
-              Solo pedimos algo importante: que los adultos acompañen la experiencia con honestidad y cuidado.
+          <div class="card">
+            <span class="tag">Verificación</span>
+            <h3>Checksums y archivos de referencia</h3>
+            <p>
+              Para evitar la manipulación de archivos y garantizar trazabilidad, publicamos los
+              <strong>hashes SHA-256</strong> de cada pista de audio en documentos de referencia.
             </p>
-            <p style="margin-top:10px; font-size:0.95rem;">
-              Creemos que la infancia no necesita <strong>miedo ni mentiras</strong> para “funcionar”.
-              Un chiste de un adulto puede ser un recuerdo lindo… o un pequeño trauma. Preferimos que a los niños
-              se les hable de los duendes como lo que son aquí: símbolos de cuidado, humor y respeto por la naturaleza,
-              no amenazas ni castigos.
+            <p>Ejemplo ilustrativo (reemplazar por el hash real en la versión final):</p>
+            <p><code>Estación 1 · SHA-256: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code></p>
+            <p>
+              Esto permite que, en caso de disputa, se pueda probar que los audios originales estaban
+              depositados y publicados antes de cualquier intento de copia literal.
             </p>
-            <p style="margin-top:10px; font-size:0.95rem;">
-              Las obras se miran, no se trepan. Si tu hijo o hija es curioso (como casi todos), te pedimos que
-              lo acompañes de cerca para que el jardín siga siendo un lugar seguro para todos.
-            </p>
-        </details>
-
-        <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
-            <summary style="font-weight:bold; cursor:pointer;">¿Puedo llevar mascotas?</summary>
-            <p style="margin-top:10px; font-size:0.95rem;">
-              Amamos los animales y entendemos que muchas personas viajan con sus compañeros peludos.
-              Por la delicadeza del jardín y las obras a ras de suelo, el ingreso de mascotas se maneja con
-              <strong>criterio y supervisión directa</strong> de sus dueños.
-            </p>
-            <p style="margin-top:10px; font-size:0.95rem;">
-              Lo básico: correa, respeto por el espacio de otras personas y disposición a recoger cualquier
-              desecho. Si el animal es muy inquieto o grande, es posible que recomendemos un recorrido más breve
-              o en horarios menos concurridos.
-            </p>
-            <p style="margin-top:10px; font-size:0.95rem;">
-              En caso de duda, puedes escribirnos antes por WhatsApp y vemos juntos la mejor forma de que tu
-              visita sea cómoda para ti, para tu mascota y para la Aldea.
-            </p>
-        </details>
-
-        <details style="margin-bottom:15px; padding:15px; background:#fff; border-radius:8px; border:1px solid #eee;">
-            <summary style="font-weight:bold; cursor:pointer;">¿Quiénes crearon La Aldea Mágica?</summary>
-            <p style="margin-top:10px; font-size:0.95rem;">
-              La Aldea Mágica forma parte de la obra iniciada en 2013 con <strong>La Casa del Duende</strong>,
-              creada por los artistas independientes <strong>Fito Girolami</strong> y <strong>Catalina Lucz-Ligeti</strong>.
-              Ellos impulsaron el mito moderno de los duendes en Baños, hoy replicado en muchas propuestas,
-              pero originado aquí.
-            </p>
-            <p style="margin-top:10px; font-size:0.95rem;">
-              Si te interesa la parte más profunda de esta historia, podés explorar la documentación y las
-              publicaciones académicas enlazadas desde la página de
-              <a href="https://lacasadelduende.art/" target="_blank" rel="noopener">La Casa del Duende</a>.
-            </p>
-        </details>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- 4. CÓMO CITAR Y CÓMO CONTACTAR -->
+    <section class="reveal" id="citar">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>4. Cómo citar la obra y cómo contactarnos</h2>
+          <p>
+            No buscamos monopolizar la figura del duende: buscamos que se respete el trabajo que se hizo
+            desde 2013 y que, si se lo toma como referencia, se lo cite con honestidad.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Cita sugerida (formato general)</h3>
+            <p>Para trabajos académicos y de prensa, sugerimos citar de forma similar a:</p>
+            <p style="font-size:0.95rem;">
+              <em>
+                Girolami, F. & Lucz-Ligeti, C. (2013–2025).<br/>
+                La Casa del Duende & La Aldea Mágica: jardín-obra de duendes en Baños de Agua Santa, Ecuador.
+                Proyecto artístico y archivo de defensa cultural independiente.
+              </em>
+            </p>
+            <p style="font-size:0.92rem;">
+              Y, cuando corresponda, incluir los DOIs de los documentos consultados (por ejemplo,
+              <a href="https://doi.org/10.5281/zenodo.17021534" target="_blank" rel="noopener">10.5281/zenodo.17021534</a>).
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Contacto para prensa e investigación</h3>
+            <p>
+              Si estás preparando una nota, un informe o una investigación y querés contrastar datos,
+              podemos compartirte líneas de tiempo, documentos y contexto adicional.
+            </p>
+            <ul class="links">
+              <li><span class="label">Correo:</span> <a href="mailto:hola@aldeamagica.art">hola@aldeamagica.art</a></li>
+              <li><span class="label">WhatsApp:</span> <a href="https://wa.me/593984373739" target="_blank" rel="noopener">+593 98 437 3739</a></li>
+              <li><span class="label">Sitio:</span> <a href="https://lacasadelduende.art/" target="_blank" rel="noopener">lacasadelduende.art</a></li>
+              <li><span class="label">Instagram:</span> <a href="https://instagram.com/aldea.magica" target="_blank" rel="noopener">@aldea.magica</a></li>
+            </ul>
+            <p style="font-size:0.9rem;">
+              Agradecemos especialmente a quienes se toman el tiempo de <strong>verificar</strong> antes de repetir
+              relatos simplificados sobre “la fiebre de los duendes” en Baños.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CIERRE -->
+    <section class="reveal" id="cierre">
+      <div class="wrap">
+        <div class="card">
+          <h3>Por qué elegimos la transparencia</h3>
+          <p>
+            La Casa del Duende y La Aldea Mágica nacen de la ternura, la picardía y el asombro.
+            Pero también nacen de una decisión ética: <strong>no construir magia a costa de otros</strong>.
+          </p>
+          <p>
+            Esta página existe porque creemos que el turismo y la cultura en Baños de Agua Santa pueden
+            crecer sin borrar lo que vino antes, y sin disfrazar de “magia” lo que en realidad es marketing
+            sin memoria.
+          </p>
+          <p>
+            Si llegaste hasta aquí, gracias por leer. Lo que hagas con esta información también forma parte
+            de la historia que se está escribiendo.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="wrap">
-      <div class="grid-3">
+      <div class="footer-grid">
         <div>
           <h4>La Aldea Mágica</h4>
           <p>Baños de Agua Santa, Ecuador.<br>Fundada en 2018.</p>
         </div>
         <div>
-          <h4>Enlaces</h4>
-          <p><a href="https://lacasadelduende.art/">La Casa del Duende</a></p>
-          <p><a href="https://instagram.com/aldea.magica">Instagram oficial</a></p>
+          <h4>Proyecto ampliado</h4>
+          <p><a href="https://lacasadelduende.art/" target="_blank" rel="noopener">La Casa del Duende (desde 2013)</a></p>
+          <p><a href="https://instagram.com/aldea.magica" target="_blank" rel="noopener">Instagram @aldea.magica</a></p>
         </div>
         <div>
-          <h4>Legal</h4>
-          <p>Obra protegida. Prohibida la copia literal de contenidos y ambientación.<br>
-          <a href="/transparencia.html">Transparencia</a></p>
+          <h4>Licencias</h4>
+          <p>
+            Contenidos e imágenes bajo
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" target="_blank" rel="noopener">
+              CC BY-NC-ND 4.0
+            </a>,
+            salvo indicación expresa.
+          </p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> Fito Girolami & Catalina Lucz-Ligeti. Todos los derechos reservados.</p>
+        <p>© <span id="year"></span> Fito Girolami & Catalina Lucz-Ligeti. Archivo de Defensa Cultural Independiente.</p>
       </div>
     </div>
   </footer>
@@ -576,7 +660,7 @@
           entry.target.classList.add('active');
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.12 });
 
     document.querySelectorAll('.reveal').forEach(section => {
       observer.observe(section);
