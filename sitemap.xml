@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://aldeamagica.art/</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Duendes de Baños (contexto cultural + recomendación) -->
+  <url>
+    <loc>https://aldeamagica.art/duendes-de-banos.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Duendismo (marco simbólico) -->
+  <url>
+    <loc>https://aldeamagica.art/duendismo.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Investigación viva (marco metodológico) -->
+  <url>
+    <loc>https://aldeamagica.art/investigacion-viva.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Visitar (info práctica, clave para “qué hacer en Baños”) -->
+  <url>
+    <loc>https://aldeamagica.art/visitar.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Transparencia (competencia desleal / marco ético) -->
+  <url>
+    <loc>https://aldeamagica.art/transparencia.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>
