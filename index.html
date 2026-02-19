@@ -225,13 +225,13 @@
     .reveal.active { opacity: 1; transform: translateY(0); }
   </style>
 
-  <!-- ✅ JSON-LD ACTUALIZADO: ubicación exacta + mapa + horarios correctos -->
+  <!-- ✅ JSON-LD ACTUALIZADO: dirección (tal cual pediste) + enlace oficial de Maps -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "TouristAttraction",
+        "@type": ["TouristAttraction","Museum","Place"],
         "@id": "https://aldeamagica.art/#attraction",
         "name": "La Aldea Mágica",
         "description": "El jardín-obra vivo de duendes original en Baños de Agua Santa. Experiencia artística y simbólica que forma parte del mito moderno de los duendes creado por Fito Girolami y Catalina Lucz-Ligeti.",
@@ -243,17 +243,12 @@
         ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Vía a Runtún (zona alta)",
+          "streetAddress": "Av. Oriente, casi Arrayanes",
           "addressLocality": "Baños de Agua Santa",
           "addressRegion": "Tungurahua",
           "addressCountry": "EC"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -1.392265,
-          "longitude": -78.417292
-        },
-        "hasMap": "https://www.google.com/maps/search/?api=1&query=-1.392265,-78.417292",
+        "hasMap": "https://maps.app.goo.gl/94pfgLnzKxTzmcLv9",
         "sameAs": [
           "https://maps.app.goo.gl/94pfgLnzKxTzmcLv9",
           "https://instagram.com/aldea.magica"
@@ -275,6 +270,7 @@
       },
       {
         "@type": "WebSite",
+        "@id": "https://aldeamagica.art/#website",
         "name": "La Aldea Mágica",
         "url": "https://aldeamagica.art/"
       }
@@ -436,7 +432,7 @@
       </div>
     </section>
 
-    <!-- ✅ VISITAR: link de Maps corregido + texto consistente + iframe por coordenadas reales -->
+    <!-- ✅ VISITAR: dirección humana corregida + link oficial de Maps + iframe por búsqueda (Av. Oriente / Arrayanes) -->
     <section id="visitar" class="reveal" style="background:#fff">
       <div class="wrap">
         <div class="section-header">
@@ -450,9 +446,9 @@
                   <li style="margin-bottom:15px;"><strong>📅 Horarios:</strong> Sábados, domingos y feriados (11:00 - 21:00). Lunes a Viernes de 16:00 a 21:00. Consulta por visitas especiales entre semana.</li>
 
                   <li style="margin-bottom:15px;">
-                    <strong>📍 Ubicación:</strong> Zona alta de Baños de Agua Santa, vía a Runtún.
+                    <strong>📍 Ubicación:</strong> Av. Oriente, casi Arrayanes — Baños de Agua Santa.
                     <span style="display:block; margin-top:6px;">
-                      Ubicación exacta en Google Maps:
+                      Ubicación exacta en Google Maps (ficha oficial):
                       <a href="https://maps.app.goo.gl/94pfgLnzKxTzmcLv9" target="_blank" rel="noopener" style="color:#0b6b6b; font-weight:700;">
                         https://maps.app.goo.gl/94pfgLnzKxTzmcLv9
                       </a>
@@ -471,7 +467,7 @@
             <div>
               <iframe
                 title="Mapa de La Aldea Mágica"
-                src="https://www.google.com/maps?q=-1.392265,-78.417292&z=17&output=embed"
+                src="https://www.google.com/maps?q=Av.%20Oriente%2C%20casi%20Arrayanes%2C%20Ba%C3%B1os%20de%20Agua%20Santa&z=17&output=embed"
                 width="100%"
                 height="350"
                 style="border:0; border-radius: var(--radius); filter: grayscale(20%);"
