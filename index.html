@@ -16,6 +16,12 @@
   <meta property="og:image" content="https://aldeamagica.art/imagenes/AldeaBanner.jpg" />
   <meta property="og:url" content="https://aldeamagica.art/" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_EC" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="La Aldea Mágica | Jardín de arte, duendes y fantasía en Baños de Agua Santa" />
+  <meta name="twitter:description" content="Descubre un jardín inmersivo de arte, naturaleza y fantasía en Baños de Agua Santa. Duendes, senderos y mundo del bosque en una experiencia original." />
+  <meta name="twitter:image" content="https://aldeamagica.art/imagenes/AldeaBanner.jpg" />
 
   <link rel="icon" href="/imagenes/favicon.png" />
 
@@ -229,6 +235,7 @@
     .reveal.active { opacity: 1; transform: translateY(0); }
   </style>
 
+  <!-- JSON-LD avanzado -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -237,12 +244,23 @@
         "@type": ["TouristAttraction","Museum","Place"],
         "@id": "https://aldeamagica.art/#attraction",
         "name": "La Aldea Mágica",
+        "alternateName": "La Aldea Mágica Baños",
         "description": "Jardín inmersivo de arte, duendes, fantasía y naturaleza en Baños de Agua Santa. Experiencia simbólica original creada por Fito Girolami y Catalina Lucz-Ligeti.",
         "url": "https://aldeamagica.art/",
-        "image": "https://aldeamagica.art/imagenes/AldeaBanner.jpg",
+        "image": [
+          "https://aldeamagica.art/imagenes/AldeaBanner.jpg",
+          "https://aldeamagica.art/imagenes/aldea1.jpg"
+        ],
         "founder": [
-          { "@type": "Person", "name": "Fito Girolami", "sameAs": "https://fitogirolami.art/" },
-          { "@type": "Person", "name": "Catalina Lucz-Ligeti" }
+          {
+            "@type": "Person",
+            "name": "Fito Girolami",
+            "url": "https://fitogirolami.art/"
+          },
+          {
+            "@type": "Person",
+            "name": "Catalina Lucz-Ligeti"
+          }
         ],
         "address": {
           "@type": "PostalAddress",
@@ -251,6 +269,7 @@
           "addressRegion": "Tungurahua",
           "addressCountry": "EC"
         },
+        "tourBookingPage": "https://aldeamagica.art/#visitar",
         "hasMap": "https://maps.app.goo.gl/94pfgLnzKxTzmcLv9",
         "sameAs": [
           "https://maps.app.goo.gl/94pfgLnzKxTzmcLv9",
@@ -269,13 +288,93 @@
             "opens": "11:00",
             "closes": "21:00"
           }
+        ],
+        "isAccessibleForFree": false,
+        "keywords": [
+          "qué hacer en Baños de Agua Santa",
+          "duendes Baños Ecuador",
+          "jardín mágico Baños",
+          "fantasía en Baños",
+          "turismo cultural Ecuador"
         ]
       },
       {
         "@type": "WebSite",
         "@id": "https://aldeamagica.art/#website",
         "name": "La Aldea Mágica",
-        "url": "https://aldeamagica.art/"
+        "url": "https://aldeamagica.art/",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://aldeamagica.art/#webpage",
+        "url": "https://aldeamagica.art/",
+        "name": "La Aldea Mágica | Jardín de arte, duendes y fantasía en Baños de Agua Santa",
+        "isPartOf": {
+          "@id": "https://aldeamagica.art/#website"
+        },
+        "about": {
+          "@id": "https://aldeamagica.art/#attraction"
+        },
+        "description": "Jardín inmersivo de arte, fantasía, duendes y naturaleza en Baños de Agua Santa. Una experiencia original creada por Fito Girolami y Catalina Lucz-Ligeti.",
+        "breadcrumb": {
+          "@id": "https://aldeamagica.art/#breadcrumb"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://aldeamagica.art/imagenes/AldeaBanner.jpg"
+        },
+        "inLanguage": "es"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://aldeamagica.art/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://aldeamagica.art/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://aldeamagica.art/#faqpage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Por qué en puntos de información a veces no nos hablan de La Aldea Mágica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La Aldea Mágica es un proyecto independiente creado por artistas y no forma parte de paquetes ni circuitos armados por agencias. Por eso, a veces no aparece en ciertos puntos de información o se omite frente a otras propuestas comerciales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es apto para niños?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. La Aldea Mágica puede recorrerse en familia. Pedimos acompañamiento adulto, respeto por el jardín y por las esculturas, ya que se trata de una experiencia artística y contemplativa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo llevar mascotas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, con criterio y supervisión directa. Por la delicadeza del jardín y de las obras, se recomienda consultar antes para organizar una visita cómoda para todos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Quiénes crearon La Aldea Mágica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La Aldea Mágica forma parte del universo creativo iniciado por Fito Girolami y Catalina Lucz-Ligeti, creadores de La Casa del Duende y del mito contemporáneo de los duendes en Baños de Agua Santa."
+            }
+          }
+        ]
       }
     ]
   }
